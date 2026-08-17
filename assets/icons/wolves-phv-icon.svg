@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Wolves PHV Prep">
+  <rect width="512" height="512" rx="106" fill="#173f3b"/>
+  <circle cx="256" cy="250" r="170" fill="#ffc72c"/>
+  <path fill="#fffaf2" d="M129 277l29-76c7-18 24-29 43-29h110c20 0 37 11 44 29l29 76v80c0 13-10 23-23 23h-18c-13 0-23-10-23-23v-9H183v9c0 13-10 23-23 23h-18c-13 0-23-10-23-23zm53-9h148l-19-49c-2-6-8-10-14-10h-82c-6 0-12 4-14 10zm22 58a20 20 0 100-40 20 20 0 000 40zm104 0a20 20 0 100-40 20 20 0 000 40z"/>
+  <rect x="211" y="130" width="90" height="28" rx="14" fill="#ff6b35"/>
+  <text x="256" y="151" fill="#fffaf2" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">PHV</text>
+</svg>

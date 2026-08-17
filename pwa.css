@@ -1,0 +1,20 @@
+/* PWA-only additions: the existing site styles remain unchanged. */
+.install-button {
+  background: #173f3b !important;
+  color: #fffaf2 !important;
+  border-radius: 999px !important;
+  padding: 8px 12px !important;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: flex;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  .nav-links button:not(.install-button) {
+    display: none;
+  }
+}
