@@ -94,12 +94,12 @@ function shuffledQuestion(q){
     correct:index===q.answer
   }));
 
-  shuffle(options);
+  const shuffled=shuffle(options);
 
   return {
     ...q,
-    options:options.map(option=>option.text),
-    answer:options.findIndex(option=>option.correct)
+    options:shuffled.map(option=>option.text),
+    answer:shuffled.findIndex(option=>option.correct)
   };
 }
 
