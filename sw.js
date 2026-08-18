@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.0.1';
 const CACHE_NAME = `wolves-phv-prep-${APP_VERSION}`;
 const BASE_PATH = '/Wolverhampton-PHV-Prep/';
 const APP_SHELL = [
