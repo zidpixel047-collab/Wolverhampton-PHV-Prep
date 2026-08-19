@@ -1,1404 +1,1459 @@
-/* =========================================================
-   WOLVERHAMPTON PHV PREP
-   100 UNIQUE PRACTICE QUESTIONS
-   ========================================================= */
+// ============================================================
+// WOLVERHAMPTON PHV PREP — 100 QUESTION BANK
+// 100 UNIQUE QUESTIONS
+// Correct answers are NOT always the longest answer.
+// Answer positions are randomized when displayed.
+// ============================================================
 
 const topics = [
-  ['Safeguarding','🛡️',8],
-  ['Plying for Hire','🚕',8],
+  ['Safeguarding','🛡️',12],
+  ['Plying for Hire','🚕',10],
   ['Disability Awareness','♿',8],
-  ['Vehicle Conditions','🚗',7],
+  ['Vehicle Conditions','🚗',8],
   ['Driver Responsibilities','👤',7],
   ['Road & Passenger Safety','🛣️',7],
   ['Customer Care','🤝',6],
+  ['Licensing & Licence Conditions','🪪',6],
+  ['Child Exploitation','🧒',5],
   ['County Lines','🔎',4],
-  ['GDPR & Data Protection','🔐',4],
   ['Modern Slavery','🕊️',4],
-  ['Equality & Diversity','🌍',4],
-  ['Fares & Payments','💳',4],
-  ['Licensing & Badges','🪪',4],
-  ['Lost Property','🧳',3],
+  ['GDPR & Data Protection','🔐',4],
+  ['Personal Safety','🛡️',3],
   ['Suicide Awareness','💬',3],
-  ['Health & Wellbeing','💚',3],
   ['Vehicle Inspections','🔧',3],
-  ['Smoking & Vaping','🚭',3],
-  ['Alcohol & Drugs','⚠️',3],
-  ['Complaints','📋',3],
-  ['Booking Records','📖',3],
-  ['Local Knowledge','📍',2],
-  ['Professional Conduct','🤝',2],
-  ['Accidents & Incidents','🚨',2],
-  ['Child Exploitation','🧒',2]
+  ['Lost Badges & Lost Property','🧳',2],
+  ['Health & Environmental Protection','🌱',2],
+  ['Enforcement & Compliance','⚖️',2],
+  ['Counter Terrorism','🚨',2],
+  ['English & Communication','💬',2]
 ];
 
-/*
-  q(
-    topic,
-    question,
-    optionA,
-    optionB,
-    optionC,
-    optionD,
-    correctIndex,
-    explanation
-  )
+const questionBank = [
 
-  correctIndex is 0-3.
-*/
+/* ============================================================
+   SAFEGUARDING — 12
+   ============================================================ */
 
-const rawQuestions = [
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'A young passenger tells you that they are frightened about going home. What should you do?',
+ options:[
+   'Listen calmly and report the concern through the correct safeguarding procedure.',
+   'Tell them that family matters are private.',
+   'Promise that you will never tell anyone.',
+   'Tell them to deal with it themselves.'
+ ],
+ answer:0,
+ explanation:'Safeguarding concerns should be taken seriously and reported through the appropriate route.'
+},
 
-/* =========================================================
-   SAFEGUARDING — 8
-   ========================================================= */
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'A passenger tells you something that suggests they may be at risk of abuse. What should you avoid doing?',
+ options:[
+   'Making promises about keeping the information completely secret.',
+   'Listening carefully.',
+   'Recording factual concerns where appropriate.',
+   'Following the relevant reporting procedure.'
+ ],
+ answer:0,
+ explanation:'You should not promise absolute confidentiality where safeguarding concerns are involved.'
+},
 
-q(
-'Safeguarding',
-'A passenger who appears vulnerable tells you they are worried about getting home. What should you do?',
-'Listen calmly and follow the appropriate safeguarding procedure.',
-'Tell them you cannot get involved in personal matters.',
-'Ask another passenger to decide what should happen.',
-'Promise that you will keep everything they say completely secret.',
-0,
-'Drivers should take concerns seriously, avoid promising absolute confidentiality and use the appropriate reporting route.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'Why is safeguarding important for private hire drivers?',
+ options:[
+   'Drivers may come into contact with vulnerable people and may notice warning signs.',
+   'Drivers are expected to investigate crimes themselves.',
+   'Drivers replace social workers.',
+   'Drivers are responsible for deciding whether someone is guilty.'
+ ],
+ answer:0,
+ explanation:'Drivers can be in a position to notice concerns and report them appropriately.'
+},
 
-q(
-'Safeguarding',
-'Which approach is most appropriate when a safeguarding concern is disclosed?',
-'Remain calm, listen and record relevant facts accurately.',
-'Question the person repeatedly until every detail is known.',
-'Confront anyone you think may be responsible.',
-'Wait several weeks to see whether the situation improves.',
-0,
-'The driver should avoid investigating the matter themselves and should report concerns through the appropriate route.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'A passenger appears distressed but does not explain why. What is the best approach?',
+ options:[
+   'Remain professional and give them an opportunity to speak if they want to.',
+   'Demand that they explain immediately.',
+   'Ignore them completely.',
+   'Tell other passengers about your concerns.'
+ ],
+ answer:0,
+ explanation:'A calm, respectful approach allows a passenger to communicate without pressure.'
+},
 
-q(
-'Safeguarding',
-'Why can private hire drivers be important in safeguarding?',
-'They may notice concerning behaviour or situations during journeys.',
-'They are responsible for carrying out police investigations.',
-'They are allowed to interview passengers formally.',
-'They can decide whether someone has committed an offence.',
-0,
-'Drivers can act as the eyes and ears of safeguarding services by recognising and reporting concerns.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'If you are concerned about the welfare of a child, what should your response be?',
+ options:[
+   'Follow the appropriate safeguarding reporting process.',
+   'Investigate the family yourself.',
+   'Confront everyone involved.',
+   'Post the concern on social media.'
+ ],
+ answer:0,
+ explanation:'Safeguarding concerns should be passed through the correct professional channels.'
+},
 
-q(
-'Safeguarding',
-'A passenger asks you not to tell anyone about a serious safeguarding concern. What should you remember?',
-'You should not promise absolute confidentiality if someone may be at risk.',
-'You must always agree to keep the information secret.',
-'You should post the concern anonymously online.',
-'You should ignore the concern unless another passenger confirms it.',
-0,
-'Safeguarding information may need to be shared through the correct professional route to protect someone.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'Which type of information is most useful when reporting a safeguarding concern?',
+ options:[
+   'Clear factual observations.',
+   'Rumours from other passengers.',
+   'Your personal guesses about what happened.',
+   'Comments you saw online.'
+ ],
+ answer:0,
+ explanation:'Reports should focus on factual observations rather than assumptions.'
+},
 
-q(
-'Safeguarding',
-'You notice a passenger appears unusually frightened and another person is speaking for them throughout the journey. What is the best response?',
-'Stay observant and report factual concerns through the proper safeguarding route.',
-'Accuse the other person of a crime immediately.',
-'Take photographs of both people and publish them online.',
-'Refuse to complete the journey without explaining why.',
-0,
-'Drivers should observe, avoid unnecessary confrontation and report genuine concerns appropriately.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'A vulnerable passenger asks you to keep a serious safety concern secret. What should you do?',
+ options:[
+   'Explain that you may need to share the concern with the appropriate people.',
+   'Agree immediately and keep it entirely to yourself.',
+   'Tell another passenger instead.',
+   'Ignore the concern.'
+ ],
+ answer:0,
+ explanation:'Serious safeguarding concerns may need to be shared through appropriate channels.'
+},
 
-q(
-'Safeguarding',
-'When making a safeguarding report, which information is most useful?',
-'Clear factual observations, including relevant times, places and behaviour.',
-'Your assumptions about what probably happened.',
-'Rumours from other drivers.',
-'An exaggerated description designed to get attention.',
-0,
-'Reports should distinguish factual observations from assumptions or speculation.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'What should a driver do if they are unsure whether something is a safeguarding concern?',
+ options:[
+   'Seek advice through the appropriate safeguarding route.',
+   'Automatically ignore it.',
+   'Post the situation online.',
+   'Attempt to investigate it personally.'
+ ],
+ answer:0,
+ explanation:'When unsure, seeking appropriate professional advice is safer than ignoring the concern.'
+},
 
-q(
-'Safeguarding',
-'If you believe someone is in immediate danger during a journey, what should take priority?',
-'Taking reasonable steps to protect safety and seeking appropriate emergency assistance.',
-'Finishing the fare before doing anything.',
-'Posting about the situation on social media.',
-'Arguing with the person who appears responsible.',
-0,
-'Immediate safety takes priority over completing the commercial journey.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'Which behaviour is most appropriate when a passenger discloses something worrying?',
+ options:[
+   'Stay calm, listen and avoid leading them into an answer.',
+   'Interrupt repeatedly.',
+   'Accuse someone immediately.',
+   'Tell them exactly what they must say.'
+ ],
+ answer:0,
+ explanation:'A calm and non-leading response helps preserve accurate information.'
+},
 
-q(
-'Safeguarding',
-'What should a driver avoid doing when dealing with a safeguarding concern?',
-'Attempting to conduct their own investigation.',
-'Listening carefully to what has been said.',
-'Recording relevant factual information.',
-'Using the correct reporting procedure.',
-0,
-'Drivers are not investigators. Their role is to recognise, respond appropriately and report concerns.'
-),
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'Why should a driver avoid investigating a safeguarding allegation themselves?',
+ options:[
+   'They are not responsible for carrying out a formal investigation.',
+   'Investigations are always unnecessary.',
+   'Passengers cannot provide useful information.',
+   'Only drivers are allowed to investigate.'
+ ],
+ answer:0,
+ explanation:'Drivers should report concerns rather than taking on the role of investigators.'
+},
 
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'A passenger seems controlled by another person during a journey. What should you consider?',
+ options:[
+   'Whether there may be a safeguarding or exploitation concern.',
+   'Whether they should pay more.',
+   'Whether you should confront the other person.',
+   'Whether you should post about them online.'
+ ],
+ answer:0,
+ explanation:'Controlling behaviour can be a warning sign that requires appropriate attention.'
+},
 
-/* =========================================================
-   PLYING FOR HIRE — 8
-   ========================================================= */
+{
+ topic:'Safeguarding', icon:'🛡️',
+ question:'What is the safest general principle when dealing with vulnerable passengers?',
+ options:[
+   'Treat them respectfully and act on genuine concerns through the correct channels.',
+   'Assume every concern is unimportant.',
+   'Handle every situation personally.',
+   'Discuss their circumstances with friends.'
+ ],
+ answer:0,
+ explanation:'Professional conduct and correct reporting are central to safeguarding.'
+},
 
-q(
-'Plying for Hire',
-'How must a private hire journey normally be obtained?',
-'It must be booked through a licensed private hire operator.',
-'A passenger must flag the vehicle down in the street.',
-'The driver may accept anyone who offers the correct fare.',
-'The passenger may simply enter the vehicle without a booking.',
-0,
-'Private hire vehicles must be pre-booked and cannot normally be hailed in the street.'
-),
+/* ============================================================
+   PLYING FOR HIRE — 10
+   ============================================================ */
 
-q(
-'Plying for Hire',
-'A person approaches your private hire vehicle at the roadside and asks for a journey. What should you do?',
-'Explain that the journey must be booked through the appropriate operator.',
-'Accept the passenger because they approached you first.',
-'Accept them if they agree to pay cash.',
-'Only accept them if the journey is less than ten minutes.',
-0,
-'Private hire vehicles cannot be hailed like taxis.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'How must a private hire journey normally be obtained?',
+ options:[
+   'It must be pre-booked through a licensed private hire operator.',
+   'A passenger can simply flag the vehicle down.',
+   'The driver can advertise availability from a taxi rank.',
+   'The driver can accept anyone who approaches at the roadside.'
+ ],
+ answer:0,
+ explanation:'Private hire vehicles must be pre-booked rather than plying for hire in the street.'
+},
 
-q(
-'Plying for Hire',
-'What is the main difference between a private hire vehicle and a taxi in relation to obtaining passengers?',
-'A private hire vehicle must be pre-booked, whereas a taxi may be hailed where permitted.',
-'Private hire vehicles can only carry one passenger.',
-'Taxis cannot carry passengers from ranks.',
-'Private hire vehicles are never required to be licensed.',
-0,
-'The Council explains that private hire vehicles must always be pre-booked, while taxis can be flagged down or hired at ranks.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'A person waves at your private hire vehicle from the roadside. What should you do?',
+ options:[
+   'Do not accept the journey unless it has already been properly booked.',
+   'Stop immediately and negotiate a fare.',
+   'Accept them if they are travelling a short distance.',
+   'Accept them if they offer cash.'
+ ],
+ answer:0,
+ explanation:'A private hire driver should not accept an unbooked street hail.'
+},
 
-q(
-'Plying for Hire',
-'You finish a pre-booked journey and someone nearby asks you to take them somewhere else without making a booking. What is the safest licensing response?',
-'Do not accept the new journey unless it is properly booked.',
-'Accept it if the passenger offers more money.',
-'Accept it if the destination is nearby.',
-'Accept it as long as the passenger sits in the back.',
-0,
-'A new private hire journey must be properly booked rather than being accepted as a street hail.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'What is one key difference between a hackney carriage and a private hire vehicle?',
+ options:[
+   'A private hire vehicle must be pre-booked.',
+   'A private hire vehicle can use any taxi rank.',
+   'A private hire vehicle does not need licensing.',
+   'A private hire vehicle can accept street hails.'
+ ],
+ answer:0,
+ explanation:'Private hire journeys are obtained through advance booking.'
+},
 
-q(
-'Plying for Hire',
-'Why is illegally plying for hire a serious issue?',
-'It can result in passengers travelling without the protections associated with a properly booked journey.',
-'It only affects how much fuel the vehicle uses.',
-'It is only a problem if the passenger complains.',
-'It has no effect on licensing.',
-0,
-'The Council notes that plying-for-hire offences can also involve insurance issues and passenger safety.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'A passenger says they will pay extra if you take them without a booking. What should you do?',
+ options:[
+   'Decline because payment does not make an unbooked journey lawful.',
+   'Accept because the fare is higher.',
+   'Accept if the journey is short.',
+   'Ask another passenger to approve it.'
+ ],
+ answer:0,
+ explanation:'The booking requirement is not removed because a passenger offers more money.'
+},
 
-q(
-'Plying for Hire',
-'You are waiting outside a busy venue hoping someone will ask for a journey. What should you remember?',
-'Waiting for passengers in a way that amounts to plying for hire can breach private hire restrictions.',
-'It is always acceptable if the vehicle is displaying its plate.',
-'It becomes legal if the driver leaves the engine running.',
-'It is permitted whenever the venue is busy.',
-0,
-'Having a licensed vehicle does not give a private hire driver permission to accept street hails.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'Where should a private hire driver normally wait for their next passenger?',
+ options:[
+   'In accordance with the applicable rules and without illegally plying for hire.',
+   'Anywhere passengers are likely to gather.',
+   'On a taxi rank whenever it is empty.',
+   'In the middle of a road.'
+ ],
+ answer:0,
+ explanation:'Private hire drivers must comply with the rules governing where and how they operate.'
+},
 
-q(
-'Plying for Hire',
-'Which passenger request would normally require a new booking?',
-'A person who was not part of the original booking asks for a separate journey.',
-'A passenger continues to their booked destination.',
-'A passenger asks for the radio volume to be changed.',
-'A passenger asks for the heating to be adjusted.',
-0,
-'A separate journey should be properly booked rather than treated as an informal street hire.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'A passenger says they booked another private hire vehicle but asks you to take them instead. What should you check?',
+ options:[
+   'Whether the journey has been properly booked with an authorised operator for your vehicle.',
+   'Whether they have enough cash.',
+   'Whether they know the destination.',
+   'Whether the journey is less than five miles.'
+ ],
+ answer:0,
+ explanation:'A private hire journey must be properly booked; simply claiming to have booked another vehicle is not enough.'
+},
 
-q(
-'Plying for Hire',
-'What should a private hire driver do if they are uncertain whether a proposed journey has been correctly booked?',
-'Check with the operator before accepting the journey.',
-'Accept it and sort out the booking later.',
-'Ask another passenger to confirm it.',
-'Take the journey only if cash is offered.',
-0,
-'If the booking status is unclear, the driver should confirm it through the operator rather than guessing.'
-),
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'Why is the pre-booking requirement important?',
+ options:[
+   'It distinguishes private hire work from street-hail taxi work.',
+   'It allows drivers to charge whatever they want.',
+   'It means vehicles do not need insurance.',
+   'It removes the need for licensing.'
+ ],
+ answer:0,
+ explanation:'Pre-booking is a fundamental distinction between private hire and hackney carriage operation.'
+},
 
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'A passenger approaches you outside a venue and asks for a ride. What is the correct response if there is no booking?',
+ options:[
+   'Explain that you can only take them if the journey is properly booked.',
+   'Take them because they approached first.',
+   'Take them if they pay in advance.',
+   'Take them if the venue is closing.'
+ ],
+ answer:0,
+ explanation:'A private hire vehicle should not accept an unbooked street journey.'
+},
 
-/* =========================================================
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'What should you do if you are unsure whether a journey has been booked?',
+ options:[
+   'Confirm the booking through the proper operator or booking system before accepting it.',
+   'Assume it is booked.',
+   'Accept it and check later.',
+   'Ask the passenger to decide.'
+ ],
+ answer:0,
+ explanation:'The booking should be confirmed before the journey is accepted.'
+},
+
+{
+ topic:'Plying for Hire', icon:'🚕',
+ question:'Which situation is most clearly plying for hire?',
+ options:[
+   'Waiting in a public place for people to flag you down without a booking.',
+   'Collecting a passenger from a confirmed booking.',
+   'Returning to base after a completed journey.',
+   'Driving to a pre-arranged pickup.'
+ ],
+ answer:0,
+ explanation:'Waiting to accept street hails without bookings is characteristic of plying for hire.'
+},
+
+/* ============================================================
    DISABILITY AWARENESS — 8
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Disability Awareness',
-'What should a driver do when carrying a passenger with an assistance dog?',
-'Carry the passenger and assistance dog unless a valid exemption applies.',
-'Refuse because animals are not normally allowed in vehicles.',
-'Charge an additional animal fee.',
-'Ask the passenger to leave the dog at home.',
-0,
-'Licensed drivers have duties concerning assistance dogs unless a valid exemption applies.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'What should a driver do when carrying a passenger with a disability?',
+ options:[
+   'Provide a respectful service and make reasonable adjustments where appropriate.',
+   'Assume they cannot travel independently.',
+   'Speak only to their companion.',
+   'Refuse the journey automatically.'
+ ],
+ answer:0,
+ explanation:'Disabled passengers should receive respectful and accessible service.'
+},
 
-q(
-'Disability Awareness',
-'Which statement best describes the duties relating to wheelchair users where the relevant legal requirements apply?',
-'The passenger should not be refused or charged extra because they use a wheelchair.',
-'The driver may refuse if the wheelchair is inconvenient.',
-'The driver can charge an additional accessibility fee.',
-'The passenger must always transfer out of their wheelchair.',
-0,
-'The Council states that relevant drivers must carry wheelchair users and cannot charge them an extra fare.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'A passenger with an assistance dog needs to travel. What should you do?',
+ options:[
+   'Follow the legal requirements regarding assistance dogs unless a valid exemption applies.',
+   'Refuse because animals are never permitted.',
+   'Charge an automatic animal fee.',
+   'Tell the passenger to leave the dog at home.'
+ ],
+ answer:0,
+ explanation:'Assistance dogs have specific legal protections in licensed transport.'
+},
 
-q(
-'Disability Awareness',
-'If a wheelchair user wants to remain in their wheelchair during a journey, what should the driver do?',
-'Provide the required reasonable assistance and ensure the passenger is safe and comfortable.',
-'Insist that they transfer to a normal seat.',
-'Refuse the journey because the wheelchair remains occupied.',
-'Ask another passenger to handle the wheelchair.',
-0,
-'Relevant duties include enabling the passenger to enter and leave while remaining in the wheelchair where appropriate.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'How should you communicate with a passenger who has a hearing impairment?',
+ options:[
+   'Communicate clearly and adapt to their preferred method of communication.',
+   'Shout directly into their ear.',
+   'Only speak to their companion.',
+   'Assume they cannot understand you.'
+ ],
+ answer:0,
+ explanation:'Good communication means adapting respectfully to the passenger.'
+},
 
-q(
-'Disability Awareness',
-'What is an example of reasonable mobility assistance?',
-'Helping with getting into or out of the vehicle when appropriate.',
-'Deciding where the passenger should sit without asking.',
-'Moving the passenger without explanation.',
-'Refusing to handle luggage in every circumstance.',
-0,
-'Reasonable assistance can include helping a disabled passenger get into or out of the vehicle.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'A wheelchair user needs extra time to board. What is the professional response?',
+ options:[
+   'Allow reasonable time and assist appropriately where required.',
+   'Tell them to hurry.',
+   'Cancel the journey.',
+   'Ask another passenger to deal with it.'
+ ],
+ answer:0,
+ explanation:'Patience and appropriate assistance help provide an accessible service.'
+},
 
-q(
-'Disability Awareness',
-'Can a driver charge a wheelchair user an extra fare simply because they use a wheelchair?',
-'No, where the applicable legal duty applies.',
-'Yes, whenever loading takes longer.',
-'Yes, but only for short journeys.',
-'Yes, if the driver asks before departure.',
-0,
-'The Council states that wheelchair users cannot be charged an extra fare under the relevant duty.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'What should you avoid when speaking to a disabled passenger?',
+ options:[
+   'Making assumptions about what they can or cannot do.',
+   'Using their preferred communication method.',
+   'Asking how you can assist.',
+   'Treating them respectfully.'
+ ],
+ answer:0,
+ explanation:'Disability does not mean every passenger needs the same assistance.'
+},
 
-q(
-'Disability Awareness',
-'What is the best way to communicate with a disabled passenger?',
-'Speak directly to the passenger and ask what assistance they need.',
-'Speak only to whoever is accompanying them.',
-'Assume what assistance they require.',
-'Avoid speaking to them to prevent embarrassment.',
-0,
-'Good customer care means treating passengers respectfully and asking rather than making assumptions.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'A passenger has a mobility aid. What should you consider before moving it?',
+ options:[
+   'Ask or confirm how it should be handled safely.',
+   'Move it without warning.',
+   'Leave it in the road.',
+   'Refuse to carry it under any circumstances.'
+ ],
+ answer:0,
+ explanation:'Mobility equipment should be handled safely and respectfully.'
+},
 
-q(
-'Disability Awareness',
-'A passenger has a disability but does not ask for assistance. What should you do?',
-'Offer appropriate help without assuming they need a particular type of assistance.',
-'Immediately take control of their belongings.',
-'Ignore them completely.',
-'Tell them which parts of the vehicle they are allowed to use.',
-0,
-'Drivers should be respectful and supportive while allowing passengers to communicate their needs.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'Why is disability awareness important for PHV drivers?',
+ options:[
+   'Passengers should be able to access transport fairly and safely.',
+   'Disabled passengers should only travel with carers.',
+   'It allows drivers to charge different fares.',
+   'It removes the need for licensing.'
+ ],
+ answer:0,
+ explanation:'Accessible transport is an important part of providing a fair service.'
+},
 
-q(
-'Disability Awareness',
-'Why is disability awareness important for a private hire driver?',
-'Drivers have legal duties and should provide an accessible, respectful service.',
-'It only matters when a passenger makes a complaint.',
-'It replaces the need for vehicle safety checks.',
-'It applies only to wheelchair-accessible vehicles.',
-0,
-'Disability awareness forms part of the published private hire assessment and legal responsibilities.'
-),
+{
+ topic:'Disability Awareness', icon:'♿',
+ question:'A passenger appears to need assistance but has not asked for it. What should you do?',
+ options:[
+   'Offer appropriate help rather than assuming what they need.',
+   'Grab their equipment immediately.',
+   'Ignore them completely.',
+   'Tell them they should bring someone else.'
+ ],
+ answer:0,
+ explanation:'Offering help respectfully allows the passenger to decide what assistance is useful.'
+},
 
+/* ============================================================
+   VEHICLE CONDITIONS — 8
+   ============================================================ */
 
-/* =========================================================
-   VEHICLE CONDITIONS — 7
-   ========================================================= */
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'What is the purpose of checking a vehicle before licensed work?',
+ options:[
+   'To identify faults that could affect safety or compliance.',
+   'To make the vehicle look newer.',
+   'To avoid cleaning it later.',
+   'To increase the fuel economy automatically.'
+ ],
+ answer:0,
+ explanation:'Vehicle checks help identify safety defects before passengers are carried.'
+},
 
-q(
-'Vehicle Conditions',
-'Before starting work, what should a driver check?',
-'That the vehicle is safe, roadworthy and meets its licensing requirements.',
-'Only that there is enough fuel.',
-'Only that the exterior is clean.',
-'Only that the lights inside the vehicle work.',
-0,
-'Drivers must ensure the vehicle is safe and compliant before working.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'You discover a serious safety defect during a vehicle check. What should you do?',
+ options:[
+   'Do not use the vehicle for licensed work until the issue is dealt with appropriately.',
+   'Drive carefully and ignore it.',
+   'Ask passengers whether they mind.',
+   'Hide the defect.'
+ ],
+ answer:0,
+ explanation:'A defective vehicle should not be used for licensed work when the defect affects safety.'
+},
 
-q(
-'Vehicle Conditions',
-'What should you do if a safety-critical defect is discovered during a check?',
-'Do not continue operating the vehicle until the defect is dealt with appropriately.',
-'Ignore it if the vehicle can still move.',
-'Ask the passenger whether they think it is serious.',
-'Drive faster to finish the shift sooner.',
-0,
-'A safety-critical defect can put passengers and other road users at risk.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'Which item should be checked as part of a vehicle safety inspection?',
+ options:[
+   'Brakes.',
+   'The colour of the driver's shoes.',
+   'The passenger's preferred music.',
+   'The driver's lunch.'
+ ],
+ answer:0,
+ explanation:'Braking performance is a fundamental vehicle safety check.'
+},
 
-q(
-'Vehicle Conditions',
-'Why is vehicle cleanliness important in private hire work?',
-'It contributes to passenger comfort, hygiene and professional standards.',
-'It determines the vehicle's fuel consumption.',
-'It replaces mechanical inspections.',
-'It allows the driver to ignore licensing conditions.',
-0,
-'Cleanliness is part of providing a professional and suitable service.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'Why should tyres be checked before work?',
+ options:[
+   'Defective or damaged tyres can create a serious safety risk.',
+   'Tyres affect the radio signal.',
+   'They determine the passenger's fare.',
+   'They replace the need for brakes.'
+ ],
+ answer:0,
+ explanation:'Tyre condition directly affects vehicle safety and control.'
+},
 
-q(
-'Vehicle Conditions',
-'What should you do if a warning light indicates a potentially serious vehicle fault?',
-'Assess the issue appropriately and avoid operating the vehicle if it is unsafe.',
-'Cover the warning light so passengers cannot see it.',
-'Ignore it until the next licence renewal.',
-'Continue driving because warning lights are always harmless.',
-0,
-'Potentially serious faults should never be ignored simply to complete work.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'What should you do if a required vehicle light is not working?',
+ options:[
+   'Deal with the defect before using the vehicle if it makes the vehicle non-compliant or unsafe.',
+   'Cover it with tape and continue.',
+   'Ignore it during daylight.',
+   'Ask passengers to watch the light.'
+ ],
+ answer:0,
+ explanation:'Lighting defects can affect safety and compliance.'
+},
 
-q(
-'Vehicle Conditions',
-'Why should tyres be checked before driving?',
-'Their condition and inflation can affect braking, handling and safety.',
-'They determine whether the radio works.',
-'They control the passenger's destination.',
-'They are only relevant during winter.',
-0,
-'Tyres are an important part of vehicle safety.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'Why should warning lights on the dashboard be taken seriously?',
+ options:[
+   'They may indicate a mechanical or safety issue requiring attention.',
+   'They are only decorative.',
+   'They show the passenger's destination.',
+   'They determine the fare.'
+ ],
+ answer:0,
+ explanation:'Warning lights can indicate faults that need investigation.'
+},
 
-q(
-'Vehicle Conditions',
-'What should a driver do if a vehicle is no longer safe to operate?',
-'Stop using it for passenger work until it is made safe.',
-'Continue until the end of the working week.',
-'Only tell the next passenger.',
-'Drive more slowly and ignore the problem.',
-0,
-'Passenger and road-user safety comes before completing a shift.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'What condition should a licensed vehicle generally be maintained in?',
+ options:[
+   'Safe, clean and compliant with its licensing requirements.',
+   'Only clean on weekends.',
+   'As long as it starts.',
+   'Whatever condition the passenger accepts.'
+ ],
+ answer:0,
+ explanation:'Vehicle condition is part of a driver's professional and licensing responsibilities.'
+},
 
-q(
-'Vehicle Conditions',
-'What is the purpose of a daily vehicle walkaround check?',
-'To identify safety or compliance issues before starting work.',
-'To calculate the daily fare total.',
-'To replace the vehicle licence.',
-'To determine which passengers can be carried.',
-0,
-'Wolverhampton licence conditions require drivers to undertake a daily walkaround check before commencing work.'
-),
+{
+ topic:'Vehicle Conditions', icon:'🚗',
+ question:'Why is a vehicle's steering condition important?',
+ options:[
+   'Excessive steering play can affect control of the vehicle.',
+   'It determines the booking price.',
+   'It controls the radio.',
+   'It determines passenger capacity.'
+ ],
+ answer:0,
+ explanation:'Steering defects can directly affect safe vehicle control.'
+},
 
-
-/* =========================================================
+/* ============================================================
    DRIVER RESPONSIBILITIES — 7
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Driver Responsibilities',
-'If you are unsure about a licensing condition, what should you do?',
-'Check the current official guidance or ask the appropriate licensing authority.',
-'Make your own interpretation.',
-'Ignore the condition unless someone complains.',
-'Ask a passenger to decide.',
-0,
-'Drivers should use reliable official information rather than guessing.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'What should a driver do if they are unsure about a licensing requirement?',
+ options:[
+   'Check the current official guidance or seek clarification from the appropriate authority.',
+   'Make up a rule.',
+   'Ask a passenger to decide.',
+   'Ignore the requirement.'
+ ],
+ answer:0,
+ explanation:'Drivers should use reliable official information when unsure about licensing requirements.'
+},
 
-q(
-'Driver Responsibilities',
-'What does being a professional licensed driver involve?',
-'Following licensing requirements while providing a safe and respectful service.',
-'Doing whatever is fastest during busy periods.',
-'Following rules only when officers are nearby.',
-'Putting passenger requests above every safety requirement.',
-0,
-'Professional drivers must balance good service with legal and safety responsibilities.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'Why must a licensed driver keep up with relevant licensing requirements?',
+ options:[
+   'Requirements can affect whether they are legally and professionally compliant.',
+   'It guarantees more passengers.',
+   'It removes insurance requirements.',
+   'It means the vehicle never needs checking.'
+ ],
+ answer:0,
+ explanation:'Compliance is an ongoing responsibility, not something that ends when a licence is issued.'
+},
 
-q(
-'Driver Responsibilities',
-'What should you do if your personal circumstances may affect your ability to drive safely?',
-'Take appropriate action and avoid driving if you are not fit to do so.',
-'Hide the issue from everyone.',
-'Drive more slowly but continue regardless.',
-'Ask passengers to supervise you.',
-0,
-'Fitness to drive is a fundamental safety responsibility.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'What is the best approach when a passenger asks you to break a licensing rule?',
+ options:[
+   'Politely explain that you must follow the applicable requirements.',
+   'Agree if they offer more money.',
+   'Break it if the journey is short.',
+   'Ask another driver to decide.'
+ ],
+ answer:0,
+ explanation:'Passenger requests do not override licensing or safety requirements.'
+},
 
-q(
-'Driver Responsibilities',
-'Why should a driver keep up to date with licensing requirements?',
-'Rules and conditions can change and drivers are responsible for complying with them.',
-'Only new drivers need to know the rules.',
-'The operator automatically accepts responsibility for every driver decision.',
-'Licensing rules only matter during the application.',
-0,
-'Drivers need to remain aware of current requirements.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'What should a professional driver do after receiving important licensing information from the Council?',
+ options:[
+   'Read it and make sure they understand any relevant changes.',
+   'Delete it immediately.',
+   'Ignore it unless a passenger mentions it.',
+   'Forward it to random passengers.'
+ ],
+ answer:0,
+ explanation:'Drivers need to remain informed about relevant requirements.'
+},
 
-q(
-'Driver Responsibilities',
-'If an authorised officer asks for information relevant to licensing compliance, what should a driver do?',
-'Cooperate appropriately and provide the information required by law or licensing conditions.',
-'Refuse every request automatically.',
-'Delete the relevant information.',
-'Ask passengers to answer instead.',
-0,
-'Drivers should cooperate with lawful licensing and enforcement processes.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'What does being fit to drive include?',
+ options:[
+   'Being sufficiently alert and capable of driving safely.',
+   'Being able to finish the shift quickly.',
+   'Having a full tank of fuel.',
+   'Knowing every passenger personally.'
+ ],
+ answer:0,
+ explanation:'A driver must be physically and mentally capable of driving safely.'
+},
 
-q(
-'Driver Responsibilities',
-'What should a driver do if their licence or required documentation is no longer valid?',
-'Stop undertaking work that requires it and follow the appropriate renewal or replacement process.',
-'Continue until someone notices.',
-'Borrow another driver's documents.',
-'Change the expiry date themselves.',
-0,
-'Drivers must only work when properly licensed and documented.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'If you are too tired to drive safely, what should you do?',
+ options:[
+   'Stop driving and rest before continuing.',
+   'Turn the music louder.',
+   'Drive faster to finish early.',
+   'Ask passengers to keep you awake.'
+ ],
+ answer:0,
+ explanation:'Fatigue can seriously affect driving ability.'
+},
 
-q(
-'Driver Responsibilities',
-'Why is it important for drivers to follow licensing conditions even when passengers request otherwise?',
-'Passenger requests do not override legal or licensing requirements.',
-'A passenger can authorise any licensing breach.',
-'The driver is exempt from rules during busy periods.',
-'Rules only apply to journeys lasting more than an hour.',
-0,
-'Drivers remain responsible for complying with the conditions of their licence.'
-),
+{
+ topic:'Driver Responsibilities', icon:'👤',
+ question:'Why should drivers maintain professional boundaries with passengers?',
+ options:[
+   'It helps protect passengers and drivers and maintains professional conduct.',
+   'It guarantees tips.',
+   'It allows drivers to collect personal information.',
+   'It removes safeguarding responsibilities.'
+ ],
+ answer:0,
+ explanation:'Professional boundaries are important for safety, trust and appropriate conduct.'
+},
 
-
-/* =========================================================
+/* ============================================================
    ROAD & PASSENGER SAFETY — 7
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Road & Passenger Safety',
-'A passenger asks you to stop somewhere that is unsafe. What should you do?',
-'Explain the concern and stop at the nearest safe and lawful location.',
-'Stop immediately regardless of the danger.',
-'Tell them to leave while the vehicle is moving slowly.',
-'Ignore them completely.',
-0,
-'Drivers should provide safe passenger drop-off points.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'A passenger asks you to stop somewhere unsafe. What should you do?',
+ options:[
+   'Explain the concern and choose the nearest safe and lawful stopping place.',
+   'Stop immediately regardless of the location.',
+   'Ask them to leave while moving.',
+   'Stop in a live traffic lane.'
+ ],
+ answer:0,
+ explanation:'Passenger requests should not override road safety.'
+},
 
-q(
-'Road & Passenger Safety',
-'What should you do if a passenger is not wearing a seat belt where one is required?',
-'Remind them appropriately and encourage compliance with the law.',
-'Accelerate to make them put it on.',
-'Ignore the issue every time.',
-'Refuse to speak to them.',
-0,
-'Seat belts are an important part of passenger safety.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'What should a driver do when approaching a busy pedestrian area?',
+ options:[
+   'Reduce risk by driving appropriately for the conditions and watching for pedestrians.',
+   'Increase speed to clear the area.',
+   'Ignore pedestrians until they cross.',
+   'Use the horn continuously.'
+ ],
+ answer:0,
+ explanation:'Drivers should adapt speed and attention to road and pedestrian conditions.'
+},
 
-q(
-'Road & Passenger Safety',
-'Why should a driver avoid unnecessary distractions while driving?',
-'Distractions can reduce attention and increase collision risk.',
-'They only affect fuel consumption.',
-'They only matter during motorway journeys.',
-'Passengers are responsible for watching the road.',
-0,
-'Drivers need to maintain attention throughout the journey.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'A passenger is not wearing a seat belt where one is required. What should you do?',
+ options:[
+   'Remind them of the requirement and encourage them to wear it.',
+   'Ignore it completely.',
+   'Drive faster.',
+   'Remove the seat belt yourself.'
+ ],
+ answer:0,
+ explanation:'Seat belts are an important passenger safety measure.'
+},
 
-q(
-'Road & Passenger Safety',
-'A passenger asks you to use your phone while the vehicle is moving. What should you do?',
-'Do not use it in a way that distracts from safe driving.',
-'Use it quickly while travelling slowly.',
-'Let the passenger hold the steering wheel.',
-'Use it whenever traffic is stopped temporarily.',
-0,
-'Safe driving requires attention to the road and compliance with phone-use laws.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'What is the safest approach when road conditions suddenly become difficult?',
+ options:[
+   'Slow down appropriately and adjust your driving to the conditions.',
+   'Maintain the same speed regardless.',
+   'Accelerate through the hazard.',
+   'Look only at the navigation screen.'
+ ],
+ answer:0,
+ explanation:'Driving should be adapted to weather, traffic and road conditions.'
+},
 
-q(
-'Road & Passenger Safety',
-'What is the safest approach when driving in poor weather?',
-'Adjust speed and driving style to the conditions.',
-'Maintain the same speed regardless of visibility.',
-'Drive close to the vehicle ahead for shelter.',
-'Use hazard lights continuously while moving.',
-0,
-'Drivers should adapt their driving to road, weather and visibility conditions.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'A passenger distracts you while you are driving. What should you do?',
+ options:[
+   'Remain focused on driving and deal with the conversation safely.',
+   'Turn around to face them.',
+   'Use your phone while responding.',
+   'Take your eyes off the road.'
+ ],
+ answer:0,
+ explanation:'The driver's primary responsibility during a journey is safe vehicle control.'
+},
 
-q(
-'Road & Passenger Safety',
-'A passenger is behaving in a way that distracts you from driving. What should you do?',
-'Calmly explain that you need to concentrate on driving safely.',
-'Argue with them while driving.',
-'Turn around to face them.',
-'Stop in the middle of the road.',
-0,
-'The driver must maintain attention and can set reasonable boundaries.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'Why should luggage be secured properly?',
+ options:[
+   'Loose luggage can become a hazard during sudden braking or a collision.',
+   'It makes the journey cheaper.',
+   'It improves the radio signal.',
+   'It replaces the need for seat belts.'
+ ],
+ answer:0,
+ explanation:'Unsecured objects can move dangerously during sudden vehicle movements.'
+},
 
-q(
-'Road & Passenger Safety',
-'What is the safest reason to choose a particular stopping location?',
-'It allows passengers to leave safely without creating unnecessary danger to other road users.',
-'It is closest to the passenger's exact door regardless of traffic.',
-'It is the quickest place for the driver to stop.',
-'It has the fewest pedestrians, regardless of road conditions.',
-0,
-'Passenger convenience should not override safe and lawful stopping.'
-),
+{
+ topic:'Road & Passenger Safety', icon:'🛣️',
+ question:'What should you do if an emergency vehicle approaches while you are carrying a passenger?',
+ options:[
+   'Respond safely and legally while allowing it to pass when appropriate.',
+   'Ignore it.',
+   'Race it to the next junction.',
+   'Stop wherever you are without considering other traffic.'
+ ],
+ answer:0,
+ explanation:'Drivers should respond appropriately without creating another hazard.'
+},
 
-
-/* =========================================================
+/* ============================================================
    CUSTOMER CARE — 6
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Customer Care',
-'A passenger is unhappy because traffic has delayed the journey. What is the best response?',
-'Remain calm, acknowledge their frustration and communicate clearly.',
-'Argue that the delay is entirely their fault.',
-'Ignore them until the journey ends.',
-'Threaten to end the journey immediately.',
-0,
-'Professional communication can help manage difficult situations.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'A passenger complains about traffic delays. What is the most professional response?',
+ options:[
+   'Remain calm, acknowledge the frustration and communicate clearly.',
+   'Tell them it is entirely their fault.',
+   'Argue with them.',
+   'End the journey immediately.'
+ ],
+ answer:0,
+ explanation:'Professional communication helps manage difficult situations.'
+},
 
-q(
-'Customer Care',
-'What is a good example of professional customer service?',
-'Being polite, reliable and respectful while keeping appropriate boundaries.',
-'Discussing previous passengers with customers.',
-'Arguing whenever a passenger disagrees.',
-'Making promises that cannot be kept.',
-0,
-'Professional service includes respectful communication and appropriate conduct.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'What should you do if you do not understand a passenger's destination?',
+ options:[
+   'Politely ask them to clarify it.',
+   'Pretend you understood.',
+   'Choose a destination yourself.',
+   'Ignore the passenger.'
+ ],
+ answer:0,
+ explanation:'Clarifying the destination avoids unnecessary confusion and mistakes.'
+},
 
-q(
-'Customer Care',
-'A passenger gives you an address that is difficult to understand. What should you do?',
-'Politely clarify the destination before continuing.',
-'Guess the destination.',
-'Drive somewhere nearby and ask later.',
-'Refuse the journey immediately.',
-0,
-'Clarifying information reduces mistakes and helps provide a safe service.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'A passenger becomes verbally aggressive. What is the best initial approach?',
+ options:[
+   'Remain calm and avoid escalating the situation.',
+   'Insult them back.',
+   'Threaten them.',
+   'Deliberately drive dangerously.'
+ ],
+ answer:0,
+ explanation:'Remaining calm can prevent a difficult situation from escalating.'
+},
 
-q(
-'Customer Care',
-'How should a driver respond to a reasonable passenger request?',
-'Consider it politely while still following safety and licensing requirements.',
-'Automatically refuse every request.',
-'Agree even if it would break a licensing condition.',
-'Ignore the passenger until they stop asking.',
-0,
-'Good customer care does not override legal or safety requirements.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'Why is respectful communication important?',
+ options:[
+   'It helps provide a professional and safe service.',
+   'It guarantees a large tip.',
+   'It removes all licensing rules.',
+   'It means complaints cannot be made.'
+ ],
+ answer:0,
+ explanation:'Respectful communication is a basic part of professional customer service.'
+},
 
-q(
-'Customer Care',
-'A passenger becomes verbally frustrated. What is the most professional response?',
-'Remain calm and avoid unnecessarily escalating the situation.',
-'Respond with stronger language.',
-'Threaten the passenger immediately.',
-'Drive aggressively to end the journey faster.',
-0,
-'Staying calm can prevent a difficult interaction from escalating.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'A passenger asks a reasonable question about the journey. What should you do?',
+ options:[
+   'Answer politely and clearly where you can.',
+   'Ignore them.',
+   'Tell them passengers are not allowed to ask questions.',
+   'Become argumentative.'
+ ],
+ answer:0,
+ explanation:'Clear communication builds confidence and reduces misunderstandings.'
+},
 
-q(
-'Customer Care',
-'Why should a driver avoid discussing another passenger's private circumstances?',
-'It could breach confidentiality and undermine trust.',
-'It makes journeys take longer.',
-'Passengers may ask too many questions.',
-'It affects fuel consumption.',
-0,
-'Passenger information should be handled respectfully and securely.'
-),
+{
+ topic:'Customer Care', icon:'🤝',
+ question:'A passenger makes a complaint about your service. What should you avoid?',
+ options:[
+   'Threatening or intimidating the passenger.',
+   'Listening calmly.',
+   'Explaining the proper complaints route.',
+   'Remaining professional.'
+ ],
+ answer:0,
+ explanation:'Complaints should be handled professionally rather than through intimidation.'
+},
 
+/* ============================================================
+   LICENSING & LICENCE CONDITIONS — 6
+   ============================================================ */
 
-/* =========================================================
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'What should you do if your driver badge is lost?',
+ options:[
+   'Report it promptly and follow the Council's replacement procedure.',
+   'Borrow another driver's badge.',
+   'Continue indefinitely without reporting it.',
+   'Make your own replacement.'
+ ],
+ answer:0,
+ explanation:'Lost identification should be reported and replaced through the proper process.'
+},
+
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'Why should a driver comply with licence conditions?',
+ options:[
+   'They form part of the requirements for operating lawfully as a licensed driver.',
+   'They are optional suggestions.',
+   'They only matter during inspections.',
+   'They only apply to new drivers.'
+ ],
+ answer:0,
+ explanation:'Licence conditions are part of the regulatory framework governing licensed work.'
+},
+
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'What should you do if your licence information changes and the Council requires notification?',
+ options:[
+   'Notify the Council using the appropriate process.',
+   'Wait until someone discovers it.',
+   'Tell passengers instead.',
+   'Post it on social media.'
+ ],
+ answer:0,
+ explanation:'Required changes should be reported through the official licensing process.'
+},
+
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'Why is it important to display required vehicle identifiers correctly?',
+ options:[
+   'They help demonstrate that the vehicle is properly licensed and identifiable.',
+   'They increase fuel economy.',
+   'They replace insurance.',
+   'They allow street hailing.'
+ ],
+ answer:0,
+ explanation:'Required identifiers are part of licensing and compliance.'
+},
+
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'What should you do if you are unsure whether a licence condition has changed?',
+ options:[
+   'Check the latest official Council information.',
+   'Rely on an old social media post.',
+   'Ask a passenger.',
+   'Assume nothing has changed.'
+ ],
+ answer:0,
+ explanation:'Current official guidance is the safest source for licensing requirements.'
+},
+
+{
+ topic:'Licensing & Licence Conditions', icon:'🪪',
+ question:'Why should a driver keep their licence-related information secure?',
+ options:[
+   'It contains information that should not be misused or shared unnecessarily.',
+   'It makes the car faster.',
+   'It guarantees bookings.',
+   'It prevents all complaints.'
+ ],
+ answer:0,
+ explanation:'Licence and personal information should be handled responsibly.'
+},
+
+/* ============================================================
+   CHILD EXPLOITATION — 5
+   ============================================================ */
+
+{
+ topic:'Child Exploitation', icon:'🧒',
+ question:'A child appears frightened while travelling with an adult who answers every question for them. What should you consider?',
+ options:[
+   'Whether this could indicate a safeguarding or exploitation concern.',
+   'Whether the child should pay the fare.',
+   'Whether you should post a photograph online.',
+   'Whether you should confront the adult.'
+ ],
+ answer:0,
+ explanation:'Controlling behaviour can be a potential warning sign and should be handled through safeguarding procedures.'
+},
+
+{
+ topic:'Child Exploitation', icon:'🧒',
+ question:'Which may be a warning sign of child exploitation?',
+ options:[
+   'A child appearing unusually fearful or controlled by another person.',
+   'A child carrying school books.',
+   'A child asking for directions.',
+   'A child wearing a coat.'
+ ],
+ answer:0,
+ explanation:'Fearful or controlling circumstances may warrant safeguarding attention.'
+},
+
+{
+ topic:'Child Exploitation', icon:'🧒',
+ question:'What should a driver do if they suspect a child may be being exploited?',
+ options:[
+   'Report the concern through the appropriate safeguarding route.',
+   'Confront the suspected exploiter personally.',
+   'Post the details online.',
+   'Ignore it unless the child asks for help.'
+ ],
+ answer:0,
+ explanation:'Concerns should be reported through appropriate professional channels.'
+},
+
+{
+ topic:'Child Exploitation', icon:'🧒',
+ question:'Why can PHV drivers be important in identifying child exploitation?',
+ options:[
+   'They may observe children travelling in circumstances that raise concerns.',
+   'They are trained police investigators.',
+   'They decide criminal cases.',
+   'They can legally search passengers.'
+ ],
+ answer:0,
+ explanation:'Drivers may notice signs but should report rather than investigate.'
+},
+
+{
+ topic:'Child Exploitation', icon:'🧒',
+ question:'What type of information is most useful when reporting suspected exploitation?',
+ options:[
+   'Specific factual observations about what you saw or heard.',
+   'Rumours about the people involved.',
+   'Your guesses about their motives.',
+   'Comments from strangers online.'
+ ],
+ answer:0,
+ explanation:'Factual observations make reports clearer and more useful.'
+},
+
+/* ============================================================
    COUNTY LINES — 4
-   ========================================================= */
+   ============================================================ */
 
-q(
-'County Lines',
-'Which situation could be a warning sign of county lines exploitation?',
-'A person appears controlled by others and seems unusually fearful or secretive.',
-'A passenger asks for directions.',
-'A passenger pays by card.',
-'A passenger requests a receipt.',
-0,
-'Exploitation can involve control, fear, coercion and unusual travel patterns.'
-),
+{
+ topic:'County Lines', icon:'🔎',
+ question:'Which may be a warning sign associated with county lines exploitation?',
+ options:[
+   'A person appearing controlled by others or carrying multiple phones.',
+   'Someone asking for a receipt.',
+   'Someone carrying a shopping bag.',
+   'Someone using a navigation app.'
+ ],
+ answer:0,
+ explanation:'Control, multiple phones and unusual circumstances can be warning signs.'
+},
 
-q(
-'County Lines',
-'Why might a taxi or private hire driver notice county lines exploitation?',
-'Drivers may observe passengers and journeys that others do not see.',
-'Drivers have special police powers.',
-'Drivers can search passengers legally whenever they want.',
-'Drivers are responsible for deciding criminal charges.',
-0,
-'Drivers may encounter situations that raise safeguarding concerns.'
-),
+{
+ topic:'County Lines', icon:'🔎',
+ question:'What should you do if you notice possible signs of county lines exploitation?',
+ options:[
+   'Report concerns through the appropriate safeguarding or reporting route.',
+   'Confront suspected criminals yourself.',
+   'Post the person's details online.',
+   'Ignore the situation.'
+ ],
+ answer:0,
+ explanation:'Drivers should report concerns rather than putting themselves at risk.'
+},
 
-q(
-'County Lines',
-'What should a driver do if they have concerns about possible exploitation?',
-'Record relevant factual observations and report the concern through the appropriate route.',
-'Confront suspected offenders alone.',
-'Publish details online.',
-'Ignore it unless the passenger asks for help.',
-0,
-'Drivers should report concerns rather than attempting their own investigation.'
-),
+{
+ topic:'County Lines', icon:'🔎',
+ question:'Why might a person involved in county lines appear reluctant to speak?',
+ options:[
+   'They may be frightened, controlled or threatened by others.',
+   'They are always hiding a driving offence.',
+   'They are automatically guilty.',
+   'They simply dislike drivers.'
+ ],
+ answer:0,
+ explanation:'Exploitation can involve fear and control.'
+},
 
-q(
-'County Lines',
-'Which behaviour could increase a driver's safeguarding concern?',
-'A passenger appears frightened while another person controls the interaction.',
-'A passenger asks for a quieter journey.',
-'A passenger checks the time.',
-'A passenger asks for a receipt.',
-0,
-'Controlling behaviour and fear can be indicators requiring attention.'
-),
+{
+ topic:'County Lines', icon:'🔎',
+ question:'What should a driver avoid when they suspect exploitation?',
+ options:[
+   'Putting themselves or the passenger at greater risk through confrontation.',
+   'Recording factual observations where appropriate.',
+   'Following reporting procedures.',
+   'Seeking appropriate advice.'
+ ],
+ answer:0,
+ explanation:'Safety should be maintained while concerns are passed to the appropriate authorities.'
+},
 
-
-/* =========================================================
-   GDPR — 4
-   ========================================================= */
-
-q(
-'GDPR & Data Protection',
-'How should passenger personal information be handled?',
-'Keep it secure and use it only for a legitimate purpose.',
-'Share it with friends if they are curious.',
-'Post it online after removing the passenger's first name.',
-'Keep every detail forever without a reason.',
-0,
-'Personal information should be handled lawfully, securely and only for appropriate purposes.'
-),
-
-q(
-'GDPR & Data Protection',
-'A passenger gives you personal information for their booking. What should you do?',
-'Handle it securely and only use it for the relevant purpose.',
-'Send it to another driver for entertainment.',
-'Save it permanently on a public device.',
-'Share it in a group chat.',
-0,
-'Personal data should be protected from inappropriate access or disclosure.'
-),
-
-q(
-'GDPR & Data Protection',
-'Why should a driver avoid discussing passenger information publicly?',
-'Personal information may be confidential and protected by data protection rules.',
-'Passengers always dislike conversation.',
-'It makes journeys slower.',
-'It affects vehicle licensing.',
-0,
-'Personal information must be handled responsibly.'
-),
-
-q(
-'GDPR & Data Protection',
-'What is a sensible approach to storing passenger information?',
-'Keep only what is needed and protect it from unauthorised access.',
-'Store everything indefinitely.',
-'Leave records where anyone can see them.',
-'Copy information onto personal social media accounts.',
-0,
-'Good data handling includes security, purpose limitation and avoiding unnecessary retention.'
-),
-
-
-/* =========================================================
+/* ============================================================
    MODERN SLAVERY — 4
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Modern Slavery',
-'What should you do if you suspect a passenger may be a victim of modern slavery?',
-'Stay alert, avoid increasing their risk and report concerns appropriately.',
-'Confront the suspected controller yourself.',
-'Offer money in exchange for information.',
-'Ignore the situation because it is private.',
-0,
-'Drivers should not put themselves or the passenger at additional risk.'
-),
+{
+ topic:'Modern Slavery', icon:'🕊️',
+ question:'Which situation could potentially raise concerns about modern slavery?',
+ options:[
+   'A person appearing controlled, frightened or unable to make choices freely.',
+   'A passenger asking for a receipt.',
+   'A passenger travelling with luggage.',
+   'A passenger using a phone.'
+ ],
+ answer:0,
+ explanation:'Control and lack of freedom can be warning signs of exploitation.'
+},
 
-q(
-'Modern Slavery',
-'Which may be a warning sign of exploitation?',
-'A person appears controlled, frightened or unable to speak freely.',
-'A passenger asks for directions.',
-'A passenger has luggage.',
-'A passenger asks for a receipt.',
-0,
-'Control and fear can be warning signs of exploitation.'
-),
+{
+ topic:'Modern Slavery', icon:'🕊️',
+ question:'What should you do if you suspect modern slavery?',
+ options:[
+   'Report the concern through the appropriate channel while avoiding unnecessary confrontation.',
+   'Challenge the suspected controller aggressively.',
+   'Ignore it.',
+   'Ask the passenger to investigate.'
+ ],
+ answer:0,
+ explanation:'The priority is safe reporting rather than personal intervention.'
+},
 
-q(
-'Modern Slavery',
-'Why should a driver avoid confronting a suspected exploiter?',
-'Confrontation could increase the risk to the passenger or driver.',
-'Drivers are never allowed to speak to passengers.',
-'It would automatically cancel the driver's licence.',
-'It would make the journey more expensive.',
-0,
-'Safety should be considered before taking action.'
-),
+{
+ topic:'Modern Slavery', icon:'🕊️',
+ question:'Why should a driver avoid making assumptions about a potential victim?',
+ options:[
+   'People may react differently to exploitation and circumstances can be complex.',
+   'Victims are always obvious.',
+   'Only police can see warning signs.',
+   'Assumptions are required for reporting.'
+ ],
+ answer:0,
+ explanation:'Drivers should report factual observations rather than make unsupported conclusions.'
+},
 
-q(
-'Modern Slavery',
-'What is the driver's role when noticing possible modern slavery?',
-'Recognise warning signs and report concerns through the appropriate channels.',
-'Conduct an investigation.',
-'Decide whether the person is guilty.',
-'Publish the passenger's identity.',
-0,
-'Drivers can help by recognising concerns and reporting them appropriately.'
-),
+{
+ topic:'Modern Slavery', icon:'🕊️',
+ question:'What is an appropriate attitude when dealing with someone who may be exploited?',
+ options:[
+   'Remain respectful and avoid increasing their risk.',
+   'Pressure them for information.',
+   'Publicly accuse someone.',
+   'Demand they confront their controller.'
+ ],
+ answer:0,
+ explanation:'A calm and safe approach is important when exploitation may be involved.'
+},
 
+/* ============================================================
+   GDPR & DATA PROTECTION — 4
+   ============================================================ */
 
-/* =========================================================
-   EQUALITY & DIVERSITY — 4
-   ========================================================= */
+{
+ topic:'GDPR & Data Protection', icon:'🔐',
+ question:'How should passenger personal information be handled?',
+ options:[
+   'Keep it secure and use it only for an appropriate legitimate purpose.',
+   'Share it with friends.',
+   'Post it online.',
+   'Keep every detail permanently without reason.'
+ ],
+ answer:0,
+ explanation:'Personal information must be handled securely and appropriately.'
+},
 
-q(
-'Equality & Diversity',
-'How should a private hire driver treat passengers?',
-'Fairly and respectfully without unlawful discrimination.',
-'Differently depending on their background.',
-'According to how much they are likely to tip.',
-'Only according to whether they agree with the driver.',
-0,
-'Passengers should receive a fair and respectful service.'
-),
+{
+ topic:'GDPR & Data Protection', icon:'🔐',
+ question:'A passenger gives you personal information during a journey. What should you do with it?',
+ options:[
+   'Only use or retain it when there is a legitimate reason to do so.',
+   'Send it to other drivers.',
+   'Post it in a group chat.',
+   'Use it for personal purposes.'
+ ],
+ answer:0,
+ explanation:'Personal information should not be used for unrelated personal purposes.'
+},
 
-q(
-'Equality & Diversity',
-'What is discrimination?',
-'Treating someone unfairly because of a protected characteristic or other unlawful reason.',
-'Helping a passenger with luggage.',
-'Charging the agreed fare.',
-'Checking a booking.',
-0,
-'Equality law protects people from discrimination relating to protected characteristics.'
-),
+{
+ topic:'GDPR & Data Protection', icon:'🔐',
+ question:'Why should passenger information not be discussed casually with friends?',
+ options:[
+   'It may be private personal information and should be protected.',
+   'Friends might charge you for it.',
+   'Passengers always prohibit conversation.',
+   'It could affect fuel consumption.'
+ ],
+ answer:0,
+ explanation:'Passenger information must be treated confidentially and responsibly.'
+},
 
-q(
-'Equality & Diversity',
-'What should a driver do if a passenger has a different background or belief?',
-'Provide the same professional standard of service.',
-'Ask them to explain their beliefs before starting.',
-'Refuse the journey.',
-'Charge them a different fare.',
-0,
-'Professional service should not depend on a passenger's background or beliefs.'
-),
+{
+ topic:'GDPR & Data Protection', icon:'🔐',
+ question:'What is a sensible way to protect passenger information?',
+ options:[
+   'Keep records and devices secure and restrict access appropriately.',
+   'Leave records visible in the vehicle.',
+   'Share passwords with friends.',
+   'Send information to everyone in your contacts.'
+ ],
+ answer:0,
+ explanation:'Security controls reduce the risk of personal information being misused.'
+},
 
-q(
-'Equality & Diversity',
-'Why is respectful communication important?',
-'It helps ensure passengers are treated fairly and professionally.',
-'It means drivers must agree with every passenger.',
-'It removes all licensing requirements.',
-'It means passengers can ignore safety rules.',
-0,
-'Respectful communication is an important part of equality and customer care.'
-),
+/* ============================================================
+   PERSONAL SAFETY — 3
+   ============================================================ */
 
+{
+ topic:'Personal Safety', icon:'🛡️',
+ question:'A passenger becomes threatening during a journey. What should you prioritise?',
+ options:[
+   'Your safety and the safety of others while avoiding unnecessary escalation.',
+   'Winning the argument.',
+   'Taking the passenger's phone.',
+   'Driving faster.'
+ ],
+ answer:0,
+ explanation:'Personal safety should take priority in threatening situations.'
+},
 
-/* =========================================================
-   FARES & PAYMENTS — 4
-   ========================================================= */
+{
+ topic:'Personal Safety', icon:'🛡️',
+ question:'What is a sensible approach when a situation with a passenger begins to escalate?',
+ options:[
+   'Stay calm, create distance where possible and seek appropriate assistance if needed.',
+   'Challenge the passenger aggressively.',
+   'Block them from leaving.',
+   'Continue arguing.'
+ ],
+ answer:0,
+ explanation:'De-escalation and safety are preferable to confrontation.'
+},
 
-q(
-'Fares & Payments',
-'How should a private hire fare normally be established?',
-'Through the booking or operator arrangement applying to the journey.',
-'By guessing after reaching the destination.',
-'By asking another passenger.',
-'By choosing any amount after the journey.',
-0,
-'Private hire journeys operate through a booking arrangement.'
-),
+{
+ topic:'Personal Safety', icon:'🛡️',
+ question:'Why should drivers avoid unnecessary confrontation with passengers?',
+ options:[
+   'Confrontation can increase risk to everyone involved.',
+   'Drivers must always agree with passengers.',
+   'Passengers can never complain.',
+   'It makes journeys more expensive.'
+ ],
+ answer:0,
+ explanation:'Avoiding escalation can help protect both driver and passenger.'
+},
 
-q(
-'Fares & Payments',
-'A passenger disputes the fare. What is the best response?',
-'Remain polite and explain the appropriate process for resolving the dispute.',
-'Threaten the passenger.',
-'Change the fare without explanation.',
-'Refuse to provide any information.',
-0,
-'Professional handling of disputes reduces conflict.'
-),
-
-q(
-'Fares & Payments',
-'Why is it important to provide clear information about a journey's payment arrangements?',
-'It helps avoid misunderstandings between the passenger and operator.',
-'It allows the driver to ignore licensing conditions.',
-'It guarantees every passenger will tip.',
-'It removes the need for bookings.',
-0,
-'Clear arrangements help prevent disputes.'
-),
-
-q(
-'Fares & Payments',
-'A passenger asks to pay in a way that conflicts with the operator's agreed arrangements. What should you do?',
-'Follow the applicable booking and operator payment arrangements.',
-'Invent a new payment method.',
-'Accept anything without recording it.',
-'Cancel every future booking.',
-0,
-'Drivers should follow the arrangements governing the journey.'
-),
-
-
-/* =========================================================
-   LICENSING & BADGES — 4
-   ========================================================= */
-
-q(
-'Licensing & Badges',
-'What should you do if your driver badge is lost?',
-'Report it promptly and follow the required replacement process.',
-'Borrow another driver's badge.',
-'Continue indefinitely without reporting it.',
-'Print your own replacement.',
-0,
-'Lost badges should be reported and replaced through the proper process.'
-),
-
-q(
-'Licensing & Badges',
-'Why is a driver badge important?',
-'It helps identify the licensed driver and forms part of the licensing requirements.',
-'It replaces vehicle insurance.',
-'It allows street hailing by private hire vehicles.',
-'It guarantees a passenger can avoid paying.',
-0,
-'Licensing identification is part of the regulatory system.'
-),
-
-q(
-'Licensing & Badges',
-'What should you do if a licensing document expires?',
-'Follow the appropriate renewal process before continuing work that requires it.',
-'Change the expiry date yourself.',
-'Use another driver's document.',
-'Ignore the expiry date.',
-0,
-'Drivers must keep required licensing documentation valid.'
-),
-
-q(
-'Licensing & Badges',
-'Why should a driver never lend their badge to another person?',
-'It could misrepresent who is licensed to drive and undermine licensing controls.',
-'It makes the vehicle slower.',
-'It changes the fare.',
-'It prevents passengers from using seat belts.',
-0,
-'Licensing identification must correspond to the correct driver.'
-),
-
-
-/* =========================================================
-   LOST PROPERTY — 3
-   ========================================================= */
-
-q(
-'Lost Property',
-'A passenger leaves a phone in your vehicle. What should you do?',
-'Keep it secure and follow the appropriate lost-property procedure.',
-'Use it to contact their friends without permission.',
-'Sell it after the shift.',
-'Throw it away.',
-0,
-'Lost property should be protected and dealt with through the proper process.'
-),
-
-q(
-'Lost Property',
-'Why should you avoid using a passenger's lost phone?',
-'It is someone else's property and may contain private information.',
-'Phones cannot be used in vehicles.',
-'It automatically changes the vehicle licence.',
-'It prevents the next booking.',
-0,
-'Lost property should not be used or accessed unnecessarily.'
-),
-
-q(
-'Lost Property',
-'A passenger contacts you about an item they left behind. What should you do?',
-'Follow the proper procedure for returning or recording the property.',
-'Demand an unrelated payment before considering it.',
-'Post the item publicly with their details.',
-'Keep it because it was left in the vehicle.',
-0,
-'Lost property should be handled fairly and according to the relevant procedure.'
-),
-
-
-/* =========================================================
+/* ============================================================
    SUICIDE AWARENESS — 3
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Suicide Awareness',
-'A passenger says they are struggling and may not be safe. What is an appropriate response?',
-'Stay calm, listen without judgement and seek appropriate urgent help where necessary.',
-'Tell them to stop talking about it.',
-'Promise that nobody will ever be told.',
-'Ignore the comment completely.',
-0,
-'The appropriate response is calm, supportive and focused on safety.'
-),
+{
+ topic:'Suicide Awareness', icon:'💬',
+ question:'A passenger says they are struggling and may not be safe. What is an appropriate response?',
+ options:[
+   'Stay calm, listen without judgement and seek appropriate urgent help when necessary.',
+   'Tell them to stop talking.',
+   'Promise to keep every concern secret.',
+   'Ignore them.'
+ ],
+ answer:0,
+ explanation:'A calm, supportive response and appropriate help-seeking are important.'
+},
 
-q(
-'Suicide Awareness',
-'What should a driver avoid when responding to a passenger expressing serious emotional distress?',
-'Making promises of absolute secrecy.',
-'Listening calmly.',
-'Taking the concern seriously.',
-'Seeking appropriate help when necessary.',
-0,
-'Drivers should not promise confidentiality when immediate safety may be involved.'
-),
+{
+ topic:'Suicide Awareness', icon:'💬',
+ question:'What should a driver avoid when a passenger expresses serious emotional distress?',
+ options:[
+   'Dismissing their concerns or making promises that cannot be kept.',
+   'Listening calmly.',
+   'Taking the situation seriously.',
+   'Seeking appropriate assistance.'
+ ],
+ answer:0,
+ explanation:'Serious distress should be treated respectfully rather than dismissed.'
+},
 
-q(
-'Suicide Awareness',
-'If a passenger appears to be in immediate danger, what should take priority?',
-'Getting appropriate urgent assistance while keeping the situation as safe as possible.',
-'Finishing the journey before acting.',
-'Arguing with the passenger.',
-'Posting the situation online.',
-0,
-'Immediate safety should take priority.'
-),
+{
+ topic:'Suicide Awareness', icon:'💬',
+ question:'If you believe someone is in immediate danger, what should take priority?',
+ options:[
+   'Getting appropriate emergency assistance.',
+   'Finishing the journey first regardless of circumstances.',
+   'Ignoring the situation.',
+   'Posting about it online.'
+ ],
+ answer:0,
+ explanation:'Immediate safety takes priority when there is a serious and urgent risk.'
+},
 
-
-/* =========================================================
-   HEALTH & WELLBEING — 3
-   ========================================================= */
-
-q(
-'Health & Wellbeing',
-'You feel too tired to drive safely. What should you do?',
-'Stop working and rest before driving again.',
-'Drink caffeine and continue regardless.',
-'Drive faster to finish sooner.',
-'Ignore the symptoms.',
-0,
-'Fatigue can impair driving and should be taken seriously.'
-),
-
-q(
-'Health & Wellbeing',
-'Why is adequate rest important for a professional driver?',
-'Fatigue can reduce concentration, reaction time and judgement.',
-'It guarantees there will be no traffic.',
-'It eliminates all vehicle faults.',
-'It allows passengers to choose the driver's route.',
-0,
-'Rest supports safe driving performance.'
-),
-
-q(
-'Health & Wellbeing',
-'If you become unwell while driving, what should you consider?',
-'Whether you can continue safely and, if not, stop somewhere safe.',
-'Whether the passenger will give you a good review.',
-'Whether you can increase your speed.',
-'Whether you can hide the symptoms.',
-0,
-'Fitness to drive should always be prioritised.'
-),
-
-
-/* =========================================================
+/* ============================================================
    VEHICLE INSPECTIONS — 3
-   ========================================================= */
+   ============================================================ */
 
-q(
-'Vehicle Inspections',
-'Why are regular vehicle inspections important?',
-'They help identify safety and compliance problems.',
-'They guarantee a vehicle will never break down.',
-'They replace insurance.',
-'They determine passenger fares.',
-0,
-'Inspections help identify problems before they become more serious.'
-),
+{
+ topic:'Vehicle Inspections', icon:'🔧',
+ question:'What should a driver do after identifying a defect during a vehicle check?',
+ options:[
+   'Report or deal with it appropriately and do not use the vehicle if it is unsafe or non-compliant.',
+   'Hide the defect.',
+   'Wait for a passenger to complain.',
+   'Drive until the vehicle stops.'
+ ],
+ answer:0,
+ explanation:'Defects should be dealt with before the vehicle is used when they affect safety or compliance.'
+},
 
-q(
-'Vehicle Inspections',
-'What should a driver do if an inspection identifies a serious safety issue?',
-'Follow the appropriate procedure and do not carry passengers in an unsafe vehicle.',
-'Ignore the result if the vehicle still starts.',
-'Ask the passenger to accept the risk.',
-'Hide the defect before the next inspection.',
-0,
-'Unsafe vehicles should not be used for passenger work.'
-),
+{
+ topic:'Vehicle Inspections', icon:'🔧',
+ question:'Which is included in the Council's vehicle walkaround checks?',
+ options:[
+   'Checking that brakes operate correctly.',
+   'Checking the passenger's favourite music.',
+   'Checking the driver's social media.',
+   'Checking the passenger's destination.'
+ ],
+ answer:0,
+ explanation:'The Council's vehicle check includes brake condition among other safety items.'
+},
 
-q(
-'Vehicle Inspections',
-'What is the purpose of checking lights before work?',
-'To identify faults that could affect visibility or communication with other road users.',
-'To improve the vehicle's music system.',
-'To calculate the fare.',
-'To determine the passenger's destination.',
-0,
-'Vehicle lighting is an important safety feature.'
-),
+{
+ topic:'Vehicle Inspections', icon:'🔧',
+ question:'Why should a driver complete vehicle checks routinely rather than only after something goes wrong?',
+ options:[
+   'Regular checks can identify defects before they create a safety problem.',
+   'It guarantees the vehicle will never break down.',
+   'It removes the need for maintenance.',
+   'It means the driver never needs insurance.'
+ ],
+ answer:0,
+ explanation:'Routine checks are designed to identify problems early.'
+},
 
+/* ============================================================
+   LOST BADGES & LOST PROPERTY — 2
+   ============================================================ */
 
-/* =========================================================
-   SMOKING & VAPING — 3
-   ========================================================= */
+{
+ topic:'Lost Badges & Lost Property', icon:'🧳',
+ question:'A passenger leaves a phone in your vehicle. What should you do?',
+ options:[
+   'Keep it secure and follow the appropriate lost-property procedure.',
+   'Keep it as a personal device.',
+   'Sell it immediately.',
+   'Post photographs of it online.'
+ ],
+ answer:0,
+ explanation:'Lost property should be handled through the appropriate procedure.'
+},
 
-q(
-'Smoking & Vaping',
-'What is the appropriate approach to smoking in a licensed vehicle?',
-'Maintain a smoke-free environment.',
-'Allow smoking when the windows are open.',
-'Allow it on journeys under ten minutes.',
-'Allow passengers to smoke if they pay extra.',
-0,
-'Smoking is prohibited in vehicles used as workplaces and public transport.'
-),
+{
+ topic:'Lost Badges & Lost Property', icon:'🧳',
+ question:'Why should a lost driver badge be reported promptly?',
+ options:[
+   'It is an important piece of driver identification and should not be misused.',
+   'It increases the vehicle's value.',
+   'It changes the passenger's fare.',
+   'It automatically cancels every booking.'
+ ],
+ answer:0,
+ explanation:'Prompt reporting helps prevent misuse of lost identification.'
+},
 
-q(
-'Smoking & Vaping',
-'What should a driver do if a passenger asks to vape inside the vehicle?',
-'Explain that vaping is not permitted in the vehicle.',
-'Allow it if the passenger sits in the rear.',
-'Allow it when travelling outside the city.',
-'Ask another passenger to approve it.',
-0,
-'The vehicle should remain smoke-free and drivers should apply the relevant restrictions consistently.'
-),
+/* ============================================================
+   HEALTH & ENVIRONMENTAL PROTECTION — 2
+   ============================================================ */
 
-q(
-'Smoking & Vaping',
-'Why should a driver maintain a smoke-free vehicle?',
-'It protects passengers and supports legal and professional requirements.',
-'It increases the vehicle's engine power.',
-'It guarantees higher fares.',
-'It makes navigation easier.',
-0,
-'Smoke-free vehicles provide a safer and more appropriate environment for passengers.'
-),
+{
+ topic:'Health & Environmental Protection', icon:'🌱',
+ question:'Why is maintaining a clean vehicle important?',
+ options:[
+   'It supports passenger comfort, hygiene and professional standards.',
+   'It removes the need for servicing.',
+   'It guarantees higher fares.',
+   'It replaces vehicle inspections.'
+ ],
+ answer:0,
+ explanation:'Cleanliness contributes to a safe and professional passenger environment.'
+},
 
+{
+ topic:'Health & Environmental Protection', icon:'🌱',
+ question:'What should a driver do to reduce unnecessary environmental impact?',
+ options:[
+   'Avoid unnecessary idling and drive efficiently where practical.',
+   'Leave the engine running whenever parked.',
+   'Accelerate aggressively from every stop.',
+   'Ignore vehicle maintenance.'
+ ],
+ answer:0,
+ explanation:'Efficient driving and avoiding unnecessary idling can reduce fuel use and emissions.'
+},
 
-/* =========================================================
-   ALCOHOL & DRUGS — 3
-   ========================================================= */
+/* ============================================================
+   ENFORCEMENT & COMPLIANCE — 2
+   ============================================================ */
 
-q(
-'Alcohol & Drugs',
-'What is the safest rule regarding alcohol and driving?',
-'Never drive when impaired by alcohol.',
-'Drive slowly if you have been drinking.',
-'Only avoid alcohol on long journeys.',
-'Ask passengers whether you seem safe.',
-0,
-'Impairment can seriously affect driving and puts others at risk.'
-),
+{
+ topic:'Enforcement & Compliance', icon:'⚖️',
+ question:'Why do licensing authorities carry out compliance checks?',
+ options:[
+   'To help ensure licensed drivers and vehicles meet the required standards.',
+   'To increase passenger fares.',
+   'To choose where drivers live.',
+   'To replace vehicle insurance.'
+ ],
+ answer:0,
+ explanation:'Compliance checks help maintain safety and licensing standards.'
+},
 
-q(
-'Alcohol & Drugs',
-'What should a driver do if medication may affect their ability to drive?',
-'Check the relevant medical advice and do not drive if they are not fit to do so.',
-'Ignore the warning because prescribed medication is always safe for driving.',
-'Take an extra dose before driving.',
-'Ask a passenger to monitor them.',
-0,
-'Some medicines can affect fitness to drive, so appropriate medical advice should be followed.'
-),
+{
+ topic:'Enforcement & Compliance', icon:'⚖️',
+ question:'What should a driver do when approached during a legitimate licensing compliance check?',
+ options:[
+   'Cooperate professionally and provide required information.',
+   'Refuse automatically.',
+   'Drive away immediately.',
+   'Argue with the officer.'
+ ],
+ answer:0,
+ explanation:'Professional cooperation supports effective licensing enforcement.'
+},
 
-q(
-'Alcohol & Drugs',
-'Why is driving while impaired especially serious for a professional driver?',
-'Passengers and other road users depend on the driver to operate safely.',
-'It only affects the driver's insurance price.',
-'Passengers can legally take control of the vehicle.',
-'It only matters if the journey crosses a county boundary.',
-0,
-'Professional drivers have a responsibility to protect passengers and other road users.'
-),
+/* ============================================================
+   COUNTER TERRORISM — 2
+   ============================================================ */
 
+{
+ topic:'Counter Terrorism', icon:'🚨',
+ question:'Why may PHV drivers be important in counter-terrorism awareness?',
+ options:[
+   'They regularly interact with members of the public and may notice unusual behaviour or concerns.',
+   'They are expected to investigate terrorist offences.',
+   'They can search every passenger.',
+   'They replace emergency services.'
+ ],
+ answer:0,
+ explanation:'Drivers may notice concerns but should report rather than investigate themselves.'
+},
 
-/* =========================================================
-   COMPLAINTS — 3
-   ========================================================= */
+{
+ topic:'Counter Terrorism', icon:'🚨',
+ question:'If something genuinely concerning is observed, what should a driver do?',
+ options:[
+   'Report it through the appropriate channel and avoid unnecessary confrontation.',
+   'Confront the person aggressively.',
+   'Post the details online.',
+   'Attempt to investigate personally.'
+ ],
+ answer:0,
+ explanation:'Reporting concerns safely is preferable to taking personal enforcement action.'
+},
 
-q(
-'Complaints',
-'A passenger wants to make a complaint about their journey. What should you do?',
-'Remain courteous and explain the appropriate complaints route.',
-'Argue until they withdraw the complaint.',
-'Threaten to refuse future journeys.',
-'Take their phone away.',
-0,
-'Passengers should be able to raise concerns through the appropriate process.'
-),
+/* ============================================================
+   ENGLISH & COMMUNICATION — 2
+   ============================================================ */
 
-q(
-'Complaints',
-'Why should a driver remain calm during a complaint?',
-'It helps prevent the situation from escalating and allows the issue to be dealt with professionally.',
-'It means the driver automatically wins the dispute.',
-'It removes the need for records.',
-'It prevents the passenger contacting the Council.',
-0,
-'Calm communication supports professional complaint handling.'
-),
+{
+ topic:'English & Communication', icon:'💬',
+ question:'Why must a driver communicate clearly with passengers?',
+ options:[
+   'Clear communication reduces misunderstandings and supports safe service.',
+   'It guarantees a tip.',
+   'It removes the need for navigation.',
+   'It allows the driver to ignore complaints.'
+ ],
+ answer:0,
+ explanation:'Clear communication helps passengers and drivers understand one another.'
+},
 
-q(
-'Complaints',
-'If a complaint concerns a licensing matter outside your authority to resolve, what should you do?',
-'Direct the passenger towards the appropriate operator or licensing complaints process.',
-'Destroy any related records.',
-'Promise the complaint will definitely be rejected.',
-'Ask another passenger to investigate.',
-0,
-'Complaints should be directed to the correct channel rather than ignored or mishandled.'
-),
-
-
-/* =========================================================
-   BOOKING RECORDS — 3
-   ========================================================= */
-
-q(
-'Booking Records',
-'Why are booking records important?',
-'They provide evidence that a private hire journey was properly booked.',
-'They replace the driver's licence.',
-'They are only used for advertising.',
-'They allow passenger information to be shared publicly.',
-0,
-'Booking records support accountability and demonstrate the proper booking of journeys.'
-),
-
-q(
-'Booking Records',
-'What should a driver do if there appears to be a problem with the booking details?',
-'Check the information with the operator before proceeding where necessary.',
-'Invent missing details.',
-'Ignore the issue because the passenger is already waiting.',
-'Delete the booking.',
-0,
-'Accurate booking information helps ensure the journey is properly authorised.'
-),
-
-q(
-'Booking Records',
-'Why should booking information be protected?',
-'It may contain personal information about passengers and journeys.',
-'It determines tyre pressure.',
-'It controls traffic lights.',
-'It replaces vehicle inspections.',
-0,
-'Booking records can contain personal data and should be handled securely.'
-),
-
-
-/* =========================================================
-   LOCAL KNOWLEDGE — 2
-   ========================================================= */
-
-q(
-'Local Knowledge',
-'If you are unsure of the best route to a destination, what should you do?',
-'Use an appropriate navigation tool and communicate clearly with the passenger.',
-'Pretend you know the route.',
-'Drive randomly until you recognise somewhere.',
-'Ask the passenger to leave the vehicle.',
-0,
-'Navigation tools can assist drivers, while clear communication keeps the passenger informed.'
-),
-
-q(
-'Local Knowledge',
-'Why is knowing the local road network useful to a private hire driver?',
-'It can help with efficient routing and informed decisions during journeys.',
-'It removes the need to obey road signs.',
-'It allows drivers to ignore navigation information.',
-'It guarantees there will be no delays.',
-0,
-'Local knowledge can improve journey planning without replacing legal road requirements.'
-),
-
-
-/* =========================================================
-   PROFESSIONAL CONDUCT — 2
-   ========================================================= */
-
-q(
-'Professional Conduct',
-'Which behaviour best demonstrates professional conduct?',
-'Being polite, reliable, respectful and appropriately presented.',
-'Discussing passengers with friends.',
-'Using offensive language when annoyed.',
-'Ignoring reasonable concerns.',
-0,
-'Professional conduct is an important part of maintaining passenger confidence.'
-),
-
-q(
-'Professional Conduct',
-'Why should a driver maintain appropriate boundaries with passengers?',
-'It helps protect both the passenger and driver and keeps the relationship professional.',
-'It prevents passengers from asking questions.',
-'It means the driver cannot speak to passengers.',
-'It removes all customer service responsibilities.',
-0,
-'Professional boundaries support safety, respect and appropriate conduct.'
-),
-
-
-/* =========================================================
-   ACCIDENTS & INCIDENTS — 2
-   ========================================================= */
-
-q(
-'Accidents & Incidents',
-'After a road traffic incident, what should be your immediate priority?',
-'Make the situation as safe as possible and check whether anyone needs urgent assistance.',
-'Continue the journey immediately.',
-'Argue about fault.',
-'Leave before anyone notices.',
-0,
-'Safety and appropriate assistance should come before deciding who was responsible.'
-),
-
-q(
-'Accidents & Incidents',
-'What should a driver do after an incident involving damage or injury?',
-'Follow the appropriate reporting and emergency procedures.',
-'Hide the incident from the operator.',
-'Delete all relevant information.',
-'Continue working without checking whether the vehicle is safe.',
-0,
-'Incidents should be handled and reported appropriately, and the vehicle must be safe before further passenger work.'
-),
-
-
-/* =========================================================
-   CHILD EXPLOITATION — 2
-   ========================================================= */
-
-q(
-'Child Exploitation',
-'A child appears frightened while travelling with an adult who controls the conversation. What should you do?',
-'Remain observant and report factual safeguarding concerns through the proper route.',
-'Accuse the adult publicly.',
-'Take photographs and publish them.',
-'Ignore the situation because you cannot prove anything.',
-0,
-'Drivers should recognise potential safeguarding concerns without attempting their own investigation.'
-),
-
-q(
-'Child Exploitation',
-'Why is child exploitation awareness relevant to private hire drivers?',
-'Drivers may encounter children in situations where warning signs are visible.',
-'Drivers are responsible for prosecuting offenders.',
-'Drivers are allowed to question children formally.',
-'Drivers can decide whether a child is legally protected.',
-0,
-'Drivers can play an important safeguarding role by recognising and reporting concerns.'
-)
-
-];
-
-
-/* =========================================================
-   QUESTION BUILDER
-   ========================================================= */
-
-function q(topic, question, a, b, c, d, answer, explanation) {
-  const topicData = topics.find(t => t[0] === topic);
-
-  return {
-    id: '',
-    topic,
-    icon: topicData ? topicData[1] : '📚',
-    question,
-    options: [a, b, c, d],
-    answer,
-    explanation
-  };
+{
+ topic:'English & Communication', icon:'💬',
+ question:'A passenger gives an unclear address. What should you do?',
+ options:[
+   'Politely clarify the address before continuing.',
+   'Guess the destination.',
+   'Drive somewhere nearby.',
+   'End the journey immediately.'
+ ],
+ answer:0,
+ explanation:'Clarifying unclear information reduces the risk of taking the passenger to the wrong place.'
 }
 
+];
 
-/* =========================================================
-   GIVE EVERY QUESTION A UNIQUE ID
-   ========================================================= */
 
-const bank = rawQuestions.map((question, index) => ({
-  ...question,
-  id: `${question.topic}-${index + 1}`
+// ============================================================
+// VALIDATE THE BANK
+// ============================================================
+
+console.assert(
+  questionBank.length === 100,
+  `QUESTION BANK ERROR: expected 100 questions, got ${questionBank.length}`
+);
+
+
+// ============================================================
+// BUILD THE WORKING BANK USED BY THE APP
+// ============================================================
+
+const bank = questionBank.map((q, index) => ({
+  ...q,
+  id: `${q.topic}-${index + 1}`
 }));
 
 
-/* =========================================================
-   SAFETY CHECKS
-   ========================================================= */
+// ============================================================
+// CHECK TOPIC COUNTS
+// ============================================================
 
-console.assert(
-  bank.length === 100,
-  `Question bank error: expected 100 questions but found ${bank.length}`
+const expectedCounts = Object.fromEntries(
+  topics.map(([topic, icon, count]) => [topic, count])
 );
 
-console.assert(
-  new Set(bank.map(q => q.id)).size === bank.length,
-  'Question bank error: duplicate question IDs detected'
-);
+for (const [topic, expected] of Object.entries(expectedCounts)) {
+  const actual = bank.filter(q => q.topic === topic).length;
+
+  console.assert(
+    actual === expected,
+    `TOPIC ERROR: ${topic} expected ${expected}, got ${actual}`
+  );
+}
 
 
-/* =========================================================
-   RANDOM ANSWER POSITION
-   ========================================================= */
+// ============================================================
+// RANDOM SHUFFLE
+// ============================================================
 
 function shuffle(array) {
   const copy = [...array];
@@ -1412,31 +1467,49 @@ function shuffle(array) {
 }
 
 
-function shuffledQuestion(original) {
-  const options = original.options.map((text, index) => ({
+// ============================================================
+// RANDOMISE ANSWER POSITIONS
+// ============================================================
+
+function shuffledQuestion(question) {
+
+  const answers = question.options.map((text, index) => ({
     text,
-    correct: index === original.answer
+    correct: index === question.answer
   }));
 
-  const shuffled = shuffle(options);
+  const shuffled = shuffle(answers);
 
   return {
-    ...original,
+    ...question,
     options: shuffled.map(option => option.text),
     answer: shuffled.findIndex(option => option.correct)
   };
 }
 
 
-/* =========================================================
-   STORAGE
-   ========================================================= */
+// ============================================================
+// LOCAL STORAGE
+// ============================================================
 
-const store = JSON.parse(
-  localStorage.getItem('wolves-progress') ||
-  '{"done":0,"correct":0,"mistakes":[],"xp":0,"history":[]}'
-);
+const defaultStore = {
+  done: 0,
+  correct: 0,
+  mistakes: [],
+  xp: 0,
+  history: []
+};
 
+let store;
+
+try {
+  store = JSON.parse(
+    localStorage.getItem('wolves-progress') ||
+    JSON.stringify(defaultStore)
+  );
+} catch {
+  store = { ...defaultStore };
+}
 
 function save() {
   localStorage.setItem(
@@ -1446,98 +1519,109 @@ function save() {
 }
 
 
-/* =========================================================
-   NO STREAK FEATURE
-   ========================================================= */
+// ============================================================
+// REMOVE OLD STREAK DATA
+// ============================================================
 
-/*
-   The old:
-       🔥 6 day streak
-
-   HAS BEEN REMOVED.
-
-   There is intentionally no streak counter anywhere.
-*/
+// We deliberately do NOT track a day streak anymore.
 
 
-/* =========================================================
-   PRACTICE
-   ========================================================= */
+// ============================================================
+// PRACTICE
+// ============================================================
+
+let session = {
+  list: [],
+  index: 0,
+  mode: '',
+  title: '',
+  answers: [],
+  timer: null,
+  start: 0,
+  currentQuestion: null
+};
+
 
 function startPractice(topic) {
 
   const list = topic
-    ? shuffle(bank.filter(q => q.topic === topic))
-        .slice(0, Math.min(10, bank.filter(q => q.topic === topic).length))
-    : shuffle(bank).slice(0, 5);
+    ? shuffle(
+        bank.filter(q => q.topic === topic)
+      )
+    : shuffle(bank);
+
+  const amount = topic
+    ? Math.min(10, list.length)
+    : 5;
 
   begin(
-    list,
+    list.slice(0, amount),
     'practice',
     topic || 'Quick Practice'
   );
 }
 
 
-/* =========================================================
-   KEY QUESTIONS
-   ========================================================= */
+// ============================================================
+// KEY QUESTIONS
+// ============================================================
 
 function startKey() {
 
-  const keyTopics = [
-    'Safeguarding',
-    'Plying for Hire',
-    'Disability Awareness'
-  ];
-
-  const list = [
-    ...shuffle(bank.filter(q => q.topic === 'Safeguarding')).slice(0, 3),
-    ...shuffle(bank.filter(q => q.topic === 'Plying for Hire')).slice(0, 3),
-    ...shuffle(bank.filter(q => q.topic === 'Disability Awareness')).slice(0, 2)
-  ];
+  const list = shuffle(
+    bank.filter(q =>
+      [
+        'Safeguarding',
+        'Plying for Hire',
+        'Disability Awareness'
+      ].includes(q.topic)
+    )
+  ).slice(0, 8);
 
   begin(
-    shuffle(list),
+    list,
     'key',
     'Key Questions'
   );
 }
 
 
-/* =========================================================
-   28 QUESTION MOCK
-   8 KEY QUESTIONS:
-   3 SAFEGUARDING
-   3 PLYING FOR HIRE
-   2 DISABILITY
-   ========================================================= */
+// ============================================================
+// 28 QUESTION MOCK
+// ============================================================
 
 function startMock() {
 
-  const safeguarding = shuffle(
-    bank.filter(q => q.topic === 'Safeguarding')
-  ).slice(0, 3);
+  const requiredTopics = [
+    'Safeguarding',
+    'Safeguarding',
+    'Safeguarding',
 
-  const plying = shuffle(
-    bank.filter(q => q.topic === 'Plying for Hire')
-  ).slice(0, 3);
+    'Plying for Hire',
+    'Plying for Hire',
+    'Plying for Hire',
 
-  const disability = shuffle(
-    bank.filter(q => q.topic === 'Disability Awareness')
-  ).slice(0, 2);
-
-  const keyQuestions = [
-    ...safeguarding,
-    ...plying,
-    ...disability
+    'Disability Awareness',
+    'Disability Awareness'
   ];
 
+  const keyQuestions = requiredTopics.map(topic => {
+
+    const available = bank.filter(
+      q => q.topic === topic
+    );
+
+    return shuffle(available)[0];
+
+  });
+
+
   const remaining = shuffle(
-    bank.filter(q =>
-      !keyQuestions.some(key => key.id === q.id)
+    bank.filter(
+      q => !requiredTopics.includes(q.topic)
     )
   ).slice(0, 20);
+
 
   begin(
     shuffle([
@@ -1550,23 +1634,16 @@ function startMock() {
 }
 
 
-/* =========================================================
-   SESSION
-   ========================================================= */
-
-let session = {
-  list: [],
-  index: 0,
-  mode: '',
-  title: '',
-  answers: [],
-  start: null,
-  timer: null,
-  currentQuestion: null
-};
-
+// ============================================================
+// BEGIN SESSION
+// ============================================================
 
 function begin(list, mode, title) {
+
+  if (!list.length) {
+    alert('No questions are available for this topic yet.');
+    return;
+  }
 
   session = {
     list,
@@ -1574,63 +1651,78 @@ function begin(list, mode, title) {
     mode,
     title,
     answers: [],
-    start: Date.now(),
     timer: null,
+    start: Date.now(),
     currentQuestion: null
   };
 
   renderQuestion();
 
   if (mode === 'mock') {
-    session.timer = setInterval(renderTimer, 1000);
+    session.timer = setInterval(
+      renderTimer,
+      1000
+    );
   }
 }
 
 
-/* =========================================================
-   TIMER
-   ========================================================= */
+// ============================================================
+// MOCK TIMER
+// ============================================================
 
 function renderTimer() {
 
-  const el = document.querySelector('#timer');
+  const timer = document.querySelector('#timer');
 
-  if (!el) return;
+  if (!timer) return;
 
-  const left = Math.max(
-    0,
-    1800 - Math.floor(
-      (Date.now() - session.start) / 1000
-    )
+  const elapsed = Math.floor(
+    (Date.now() - session.start) / 1000
   );
 
-  el.textContent =
-    `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}`;
+  const remaining = Math.max(
+    0,
+    1800 - elapsed
+  );
 
-  if (left === 0) {
+  const minutes = Math.floor(
+    remaining / 60
+  );
+
+  const seconds = remaining % 60;
+
+  timer.textContent =
+    `${String(minutes).padStart(2, '0')}:` +
+    `${String(seconds).padStart(2, '0')}`;
+
+  if (remaining === 0) {
     finish();
   }
 }
 
 
-/* =========================================================
-   RENDER QUESTION
-   ========================================================= */
+// ============================================================
+// RENDER QUESTION
+// ============================================================
 
 function renderQuestion() {
 
-  const original = session.list[session.index];
+  const original =
+    session.list[session.index];
 
-  const q = shuffledQuestion(original);
+  const q =
+    shuffledQuestion(original);
 
   session.currentQuestion = q;
 
-  const isMock = session.mode === 'mock';
+  const isMock =
+    session.mode === 'mock';
 
   document.querySelector('#app').innerHTML = `
     <div class="shell">
 
-      ${typeof nav === 'function' ? nav() : ''}
+      ${nav()}
 
       <div class="question-wrap">
 
@@ -1643,41 +1735,39 @@ function renderQuestion() {
 
         ${
           isMock
-          ? `
-            <div class="exam-bar">
+            ? `
+              <div class="exam-bar">
 
-              <div class="progress">
-                <i
-                  style="
-                    width:${session.index / session.list.length * 100}%
-                  "
-                ></i>
+                <div class="progress">
+                  <i style="
+                    width:${session.index /
+                      session.list.length * 100}%
+                  "></i>
+                </div>
+
+                <span
+                  class="timer"
+                  id="timer"
+                >
+                  30:00
+                </span>
+
               </div>
-
-              <span
-                class="timer"
-                id="timer"
-              >
-                30:00
-              </span>
-
-            </div>
-          `
-          : ''
+            `
+            : ''
         }
 
         <div class="question-top">
-
           <span>
             ${q.icon} ${q.topic}
           </span>
 
           <span>
-            Question ${session.index + 1}
+            Question
+            ${session.index + 1}
             of
             ${session.list.length}
           </span>
-
         </div>
 
         <h1 class="question">
@@ -1709,15 +1799,14 @@ function renderQuestion() {
 }
 
 
-/* =========================================================
-   ANSWER
-   ========================================================= */
+// ============================================================
+// ANSWER
+// ============================================================
 
 function answer(selected) {
 
   const q =
-    session.currentQuestion ||
-    session.list[session.index];
+    session.currentQuestion;
 
   const correct =
     selected === q.answer;
@@ -1734,7 +1823,7 @@ function answer(selected) {
 
       if (
         index === selected &&
-        selected !== q.answer
+        index !== q.answer
       ) {
         button.classList.add('wrong');
       }
@@ -1769,13 +1858,13 @@ function answer(selected) {
   save();
 
 
-  const box =
+  const feedback =
     document.querySelector('#feedback');
 
 
   if (session.mode === 'mock') {
 
-    box.innerHTML = `
+    feedback.innerHTML = `
       <div class="next-row">
 
         <button
@@ -1783,7 +1872,8 @@ function answer(selected) {
           onclick="next()"
         >
           ${
-            session.index === session.list.length - 1
+            session.index ===
+            session.list.length - 1
               ? 'Finish exam'
               : 'Next question →'
           }
@@ -1794,15 +1884,16 @@ function answer(selected) {
 
   } else {
 
-    box.innerHTML = `
-      <div class="feedback ${correct ? '' : 'bad'}">
+    feedback.innerHTML = `
+      <div class="
+        feedback
+        ${correct ? '' : 'bad'}
+      ">
 
         <b>
-          ${
-            correct
-              ? '✅ Correct!'
-              : '❌ Not quite'
-          }
+          ${correct
+            ? '✅ Correct!'
+            : '❌ Not quite'}
         </b>
 
         ${q.explanation}
@@ -1816,7 +1907,8 @@ function answer(selected) {
           onclick="next()"
         >
           ${
-            session.index === session.list.length - 1
+            session.index ===
+            session.list.length - 1
               ? 'See results'
               : 'Next →'
           }
@@ -1824,21 +1916,21 @@ function answer(selected) {
 
       </div>
     `;
-
   }
 }
 
 
-/* =========================================================
-   NEXT
-   ========================================================= */
+// ============================================================
+// NEXT
+// ============================================================
 
 function next() {
 
   session.index++;
 
   if (
-    session.index < session.list.length
+    session.index <
+    session.list.length
   ) {
 
     renderQuestion();
@@ -1851,9 +1943,9 @@ function next() {
 }
 
 
-/* =========================================================
-   FINISH
-   ========================================================= */
+// ============================================================
+// FINISH
+// ============================================================
 
 function finish() {
 
@@ -1863,30 +1955,33 @@ function finish() {
   }
 
 
+  if (!session.answers.length) {
+    home();
+    return;
+  }
+
+
   const score =
     session.answers.filter(
-      answer => answer.correct
+      x => x.correct
     ).length;
 
   const total =
     session.list.length;
 
   const percent =
-    total
-      ? Math.round(score / total * 100)
-      : 0;
+    Math.round(
+      score / total * 100
+    );
 
 
   if (session.mode === 'mock') {
 
     store.history.unshift({
-
       score,
-
       total,
-
-      date: new Date().toLocaleDateString()
-
+      date: new Date()
+        .toLocaleDateString()
     });
 
   }
@@ -1916,10 +2011,9 @@ function finish() {
 
 
   document.querySelector('#app').innerHTML = `
-
     <div class="shell">
 
-      ${typeof nav === 'function' ? nav() : ''}
+      ${nav()}
 
       <div class="result">
 
@@ -1941,15 +2035,14 @@ function finish() {
 
           <h2>
             ${score} / ${total}
-            —
-            ${percent}%
+            — ${percent}%
             ${percent >= 75 ? '✅' : '❌'}
           </h2>
 
           <p>
             ${
               session.mode === 'mock'
-                ? 'Pass mark: 21 / 28 (75%)'
+                ? 'Pass mark: 75%'
                 : 'Keep practising — you are building the habits that matter.'
             }
           </p>
@@ -1960,28 +2053,22 @@ function finish() {
         <table class="score-table">
 
           <thead>
-
             <tr>
               <th>Topic</th>
               <th>Score</th>
             </tr>
-
           </thead>
 
           <tbody>
 
             ${
               Object.entries(byTopic)
-                .map(
-                  ([topic, [correctAnswers, totalAnswers]]) => `
-                    <tr>
-                      <td>${topic}</td>
-                      <td>
-                        ${correctAnswers}/${totalAnswers}
-                      </td>
-                    </tr>
-                  `
-                )
+                .map(([topic, [correct, total]]) => `
+                  <tr>
+                    <td>${topic}</td>
+                    <td>${correct}/${total}</td>
+                  </tr>
+                `)
                 .join('')
             }
 
@@ -2012,283 +2099,6 @@ function finish() {
         </div>
 
       </div>
-
-    </div>
-  `;
-}
-
-
-/* =========================================================
-   MISTAKES
-   ========================================================= */
-
-function showMistakes() {
-
-  const list =
-    bank.filter(
-      question =>
-        store.mistakes.includes(question.id)
-    );
-
-
-  document.querySelector('#app').innerHTML = `
-
-    <div class="shell">
-
-      ${typeof nav === 'function' ? nav() : ''}
-
-      <button
-        class="back"
-        onclick="home()"
-      >
-        ← Home
-      </button>
-
-      <h1 class="screen-title">
-        Things I need to revise
-      </h1>
-
-      <p
-        style="
-          color:var(--muted);
-          margin-top:-20px
-        "
-      >
-        Every incorrect answer is saved here
-        for focused practice.
-      </p>
-
-      <div class="section">
-
-        ${
-          list.length
-            ? `
-              <div
-                class="stats"
-                style="
-                  max-width:280px;
-                  margin-bottom:22px
-                "
-              >
-
-                <div class="stat">
-
-                  <b>${list.length}</b>
-
-                  <small>
-                    mistakes to revisit
-                  </small>
-
-                </div>
-
-              </div>
-
-              <button
-                class="primary"
-                onclick="
-                  begin(
-                    shuffle(
-                      bank.filter(
-                        q => store.mistakes.includes(q.id)
-                      )
-                    ),
-                    'practice',
-                    'Mistake Review'
-                  )
-                "
-              >
-                Start mistake practice →
-              </button>
-            `
-            : `
-              <div class="empty">
-                🎯
-                <br><br>
-                No mistakes saved yet.
-                Start practising and any wrong
-                answers will appear here.
-              </div>
-            `
-        }
-
-      </div>
-
-    </div>
-  `;
-}
-
-
-/* =========================================================
-   PROGRESS
-   ========================================================= */
-
-function showProgress() {
-
-  const accuracy =
-    store.done
-      ? Math.round(
-          store.correct /
-          store.done *
-          100
-        )
-      : 0;
-
-
-  const mock =
-    store.history[0];
-
-
-  const ready = Math.round(
-    (accuracy * 0.5) +
-    (Math.min(store.done / 80, 1) * 20) +
-    (mock
-      ? (mock.score / mock.total * 30)
-      : 0)
-  );
-
-
-  let status;
-
-  if (ready >= 90) {
-    status = '🔥 Very strong';
-  } else if (ready >= 75) {
-    status = '🟢 Pass-ready';
-  } else if (ready >= 60) {
-    status = '🟠 Getting there';
-  } else {
-    status = '🟥 Not ready';
-  }
-
-
-  document.querySelector('#app').innerHTML = `
-
-    <div class="shell">
-
-      ${typeof nav === 'function' ? nav() : ''}
-
-      <button
-        class="back"
-        onclick="home()"
-      >
-        ← Home
-      </button>
-
-      <h1 class="screen-title">
-        My Progress
-      </h1>
-
-
-      <div
-        class="result-score"
-        style="max-width:630px"
-      >
-
-        <div
-          class="eyebrow"
-          style="color:#ffcf46"
-        >
-          I’m cooked meter
-        </div>
-
-        <h2>
-          ${ready}% — ${status}
-        </h2>
-
-        <p>
-          Based on your recent accuracy,
-          completed practice and latest mock score.
-        </p>
-
-        <div class="progress">
-
-          <i
-            style="width:${Math.min(ready,100)}%"
-          ></i>
-
-        </div>
-
-      </div>
-
-
-      <section class="section">
-
-        <div class="stats">
-
-          <div class="stat">
-            <b>${store.done}</b>
-            <small>questions completed</small>
-          </div>
-
-          <div class="stat">
-            <b>${accuracy}%</b>
-            <small>overall accuracy</small>
-          </div>
-
-          <div class="stat">
-            <b>${store.mistakes.length}</b>
-            <small>in mistake bank</small>
-          </div>
-
-          <div class="stat">
-            <b>
-              ${
-                mock
-                  ? `${mock.score}/${mock.total}`
-                  : '—'
-              }
-            </b>
-            <small>latest mock</small>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      ${
-        store.history.length
-          ? `
-            <section class="section">
-
-              <h2>
-                Mock history
-              </h2>
-
-              <table class="score-table">
-
-                <tbody>
-
-                  ${
-                    store.history
-                      .slice(0, 5)
-                      .map(
-                        item => `
-                          <tr>
-                            <td>${item.date}</td>
-                            <td>
-                              ${item.score}/${item.total}
-                              (
-                              ${Math.round(
-                                item.score /
-                                item.total *
-                                100
-                              )}%
-                              )
-                            </td>
-                          </tr>
-                        `
-                      )
-                      .join('')
-                  }
-
-                </tbody>
-
-              </table>
-
-            </section>
-          `
-          : ''
-      }
 
     </div>
   `;
